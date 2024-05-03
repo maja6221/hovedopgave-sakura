@@ -1,0 +1,58 @@
+---
+const { indhold } = Astro.props;
+import Produktkort from "../components/Produktkort.astro";
+import { Debug } from "astro/components";
+---
+
+<section>
+  {
+    indhold.map((produkter) => (
+      <Produktkort aktiv={produkter.aktiv} link={"/produkt/" + produkter.slug} image={`/produkt_billeder/${produkter.image}`} overskrift={produkter.overskrift} designer={produkter.designer} pris={produkter.pris} tekst={produkter.tekst} />
+    ))
+  }
+</section>
+
+<style>
+  img {
+    width: 100%;
+    padding: 30px;
+  }
+
+  h4 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .produkt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+
+  h2 {
+    margin-top: 1.5em;
+    border-bottom: 1px solid var(--brandbg);
+    color: var(--brandbg);
+  }
+  section {
+    display: grid;
+    gap: 1em;
+    padding-bottom: 8px;
+  }
+  @media screen and (min-width: 600px) {
+    section {
+      grid-template-columns: repeat(auto-fit, 350px);
+      justify-content: center;
+    }
+  }
+</style>
