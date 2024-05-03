@@ -1,0 +1,314 @@
+<!-- <main> -->
+    <footer>
+        <div class="footer_alt">
+          <div class="boks1">
+            <h3>VIKTORIA CERAMIC STUDIO</h3>
+            <p>Vesterbrogade 24B, 1620 København</p>
+            <h3 class="hours">ÅBNINGSTIDER:</h3>
+            <p>Onsdag - Fredag: 11:00-17:00</p>
+            <p>Lørdag: 10:00-16:00</p>
+          </div>
+          <div class="boks2">
+            <h3>SOCIALE MEDIER</h3>
+            <div class="boks2-1">
+              <a href="https://www.facebook.com/viktoriaceramicstudio/"><img class="fb" src="/images/fb.webp" alt="" /></a>
+              <a href="https://www.instagram.com/viktoriaceramicstudiocph/"><img class="ig" src="/images/ig.webp" alt="" /></a>
+              <a href="mailto:info@viktoriaceramicstudio.dk"><img class="mail" src="/images/mail.webp" alt="" /></a>
+              <img class="linked" src="/images/li.webp" alt="" />
+            </div>
+          </div>
+          <div class="boks3">
+            <h3>HJÆLP</h3>
+            <p>Returpolitik</p>
+            <p>Servicevilkår</p>
+            <p>Fortrolighedspolitik</p>
+          </div>
+          <div class="boks4">
+            <h3>TILMELD DIG VORES NYHEDSBREV</h3>
+            <div class="inputs">
+              <input class="email" type="text" placeholder="E-mail" name="email" required />
+      
+              <div class="knap">
+                <a href="form.astro"><button class="sign_up">SEND</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <style>
+        .inputs {
+          padding-top: 15px;
+        }
+      
+        .cookie {
+          margin-left: 10%;
+          padding-bottom: 10px;
+        }
+      
+        .bar_1 {
+          float: left;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      
+        .bar_2 {
+          float: right;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      
+        .email {
+          width: 100%;
+          padding: 10px;
+          margin: 2px 0 5px 0;
+          border: 0.5px solid black;
+          background: #ffffff;
+          font-family: "commuters-sans", sans-serif;
+        }
+      
+        .knap {
+          padding-top: 10px;
+          padding-inline: 30%;
+        }
+        button {
+          width: 100%;
+          background: white;
+          font-family: "commuters-sans", sans-serif;
+          text-align: center;
+          border: 0.5px solid black;
+          padding: 10px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: black;
+          color: white;
+        }
+      
+        .footer_alt {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          padding-top: 3%;
+          padding-bottom: 3%;
+          margin-inline: 8%;
+        }
+      
+        h3 {
+          font-weight: normal;
+          letter-spacing: 1px;
+          font-family: "commuters-sans", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      
+        h4 {
+          font-weight: normal;
+          letter-spacing: 1px;
+          line-height: 2.1;
+          font-size: 14px;
+          font-family: "commuters-sans", sans-serif;
+        }
+      
+        .hours {
+          padding-top: 20px;
+        }
+      
+        p {
+          font-family: "Raleway", sans-serif;
+          padding-top: 20px;
+          font-size: 14px;
+          line-height: 1.7;
+          /* letter-spacing: 2px; */
+        }
+      
+        .boks4 {
+          margin-inline: 0%;
+        }
+      
+        .boks3 {
+          margin-inline: 20%;
+        }
+      
+        .boks2 {
+          margin-inline: 20%;
+        }
+      
+        .boks2-1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          padding-top: 20px;
+          gap: 20px;
+        }
+      
+        .fb {
+          width: 45%;
+        }
+      
+        .ig {
+          width: 45%;
+        }
+      
+        .mail {
+          width: 45%;
+        }
+      
+        .linked {
+          width: 45%;
+        }
+      
+        .img1 {
+          width: 90%;
+          padding-top: 20px;
+        }
+      
+        .img2 {
+          width: 47%;
+          padding-top: 40px;
+        }
+      
+        footer {
+          background-color: #d3bcb0;
+        }
+      
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        img {
+          width: 100%;
+          height: auto;
+          /* display: block; */
+        }
+      
+        .boks1 {
+          margin-inline: 3%;
+        }
+      
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      
+        a:hover {
+          text-decoration: none;
+          color: white;
+        }
+      
+        @media (max-width: 600px) {
+          .footer_alt {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 3%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            column-gap: 50px;
+          }
+      
+          .boks1 {
+            padding-bottom: 15px;
+            padding-top: 30px;
+          }
+      
+          .boks2 {
+            padding-bottom: 35px;
+            padding-top: 30px;
+            margin-inline: 3%;
+          }
+      
+          .boks2-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 20px;
+            gap: 20px;
+          }
+      
+          .fb {
+            width: 50%;
+          }
+      
+          .ig {
+            width: 50%;
+          }
+      
+          .mail {
+            width: 50%;
+          }
+      
+          .linked {
+            width: 50%;
+          }
+      
+          .boks3 {
+            padding-bottom: 43px;
+            padding-top: 10px;
+            margin-inline: 3%;
+          }
+      
+          .img1 {
+            width: 40%;
+          }
+      
+          .img2 {
+            width: 25%;
+            padding-bottom: 13px;
+          }
+      
+          .footer_bar {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #2676f3;
+            padding-bottom: 3%;
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+      
+          .bar_1 {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+      
+          .bar_2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 3%;
+          }
+      
+          .cookie {
+            margin-left: 3%;
+            padding-bottom: 10px;
+            font-size: 14px;
+          }
+      
+          .health {
+            margin-left: 3%;
+            padding-bottom: 20px;
+            padding-top: 15px;
+            font-size: 14px;
+          }
+      
+          .omada {
+            padding-bottom: 15px;
+            padding-top: 8px;
+            font-size: 14px;
+          }
+      
+          .facebook {
+            width: 4%;
+            margin-left: 0.5px;
+            padding-top: 20px;
+            padding-bottom: 8px;
+            overflow: hidden;
+          }
+      
+          .instagram {
+            width: 4.5%;
+            padding-top: 1%;
+            margin-left: 1.2px;
+          }
+        }
+      </style>
+      
