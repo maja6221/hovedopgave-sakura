@@ -1,5 +1,73 @@
 ---
 import "../style/mutual.css";
+import Guidelatte from "../components/Guidelatte.astro";
+import Header from "../components/Header.astro"
+import Guidelatte2 from "../components/Guidelatte2.astro"; 
 ---
 
+<Header/>
+
 <h1>Guide til matcha latte</h1>
+
+<Guidelatte/>
+
+<h2>Sådan laver du matcha latte:</h2>
+<Guidelatte2 />
+
+<style>
+    /* mobil version */ 
+
+      /*ændre størrelsen på fonten til den rigtige */
+    h1{
+       text-align: center;
+       gap: 10px;
+       padding: 50px 10px 0px 10px;
+   }
+
+   h2{
+       gap: 10px;
+       padding-top: 119px;
+       padding-right: 0px;
+       padding-left: 50px;
+       padding-bottom: 30px;
+   }
+
+       /* ipad/tablet version */ 
+  @media (min-width: 820px) {
+
+   /*ændre størrelsen på fonten til den rigtige */
+   h1{
+       text-align: center;
+       gap: 10px;
+       padding: 50px 10px 0px 10px;
+   }
+
+   h2{
+       gap: 10px;
+       padding-top: 119px;
+       padding-right: 0px;
+       padding-left: 50px;
+       padding-bottom: 30px;
+   }
+  }
+
+   /* desktop version */ 
+   @media (min-width: 1000px) {
+       h1{
+       text-align: center;
+       gap: 10px;
+       padding: 50px 10px 0px 10px;
+   }
+
+   h2{
+       gap: 10px;
+       padding-top: 119px;
+       padding-right: 0px;
+       padding-left: 50px;
+       padding-bottom: 30px;
+   }
+
+   }
+
+
+</style>
