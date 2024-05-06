@@ -97,7 +97,7 @@ h5 {
 
 :root {
   --Semantik-10: #7E2323;
---Semantik-Baggrund-Beige: var(--Primitives-Farver-Beige-01);
+  --Semantik-Baggrund-Beige: var(--Primitives-Farver-Beige-01);
 --Semantik-Baggrund-Brown: var(--Primitives-Farver-Brun-05);
 --Semantik-Baggrund-Lysebrun: var(--Primitives-Farver-Brun-03);
 --Semantik-Footer-Brown: var(--Primitives-Farver-Brun-05);
