@@ -1,0 +1,69 @@
+
+
+<div class="te_boks">
+    <div class="boks1">
+    <h4>Hvad skal du bruge?</h4>
+    <img class="billde_te" src="/public/images/ting.png" alt="billede1">
+    </div>
+    <div>
+    <h4>Ingredienser</h4>
+    <div class="boks_2">
+        <h1>1.</h1>
+        <p>1-2 tsk. matchapulver</p>
+    </div>
+    <div class="boks_3">
+        <h1>2.</h1>
+        <p>2 dl 75-80 graders varmt vand</p>
+    </div>
+    </div>
+</div>
+
+<style>
+
+      /* mobil version */ 
+      .te_boks{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 100px 50px 50px 50px;
+    } 
+
+        /* ipad/tablet version */ 
+   @media (min-width: 820px) {
+    .te_boks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 100px 50px 50px 50px;
+    }
+   }
+
+    /* desktop version */ 
+    @media (min-width: 1000px) {
+    .te_boks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 100px 50px 50px 50px;
+    }
+
+    .boks1{
+        gap: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+    .boks_2{
+        display: flex;
+    }
+    .boks_3{
+        display: flex;
+     }
+
+     .billde_te{
+        width: 110%;
+     }
+    }
+
+
+</style>
