@@ -1,0 +1,52 @@
+---
+import Footer from "../components/Footer.astro";
+import "../style/mutual.css";
+import Header from "../components/Header.astro";
+import ProduktListe from "../components/ProduktListe.astro";
+import { Debug } from "astro/components";
+import Produktkort from "../components/Produktkort.astro";
+
+const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/shop";
+
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdHlwbGlucWd5Z25uYWdic2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2MzY2MjcsImV4cCI6MTk5NDIxMjYyN30.eim5AhzEGy_kEp2s9c-TN-mL3YdGy2KBYYxO4DX58ds",
+  },
+};
+
+const response = await fetch(url, options);
+const alleProdukter = await response.json();
+
+const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark Lauberg");
+const Pia = alleProdukter.filter((produkter) => produkter.designer == "Pia Lund");
+const ClibKlap = alleProdukter.filter((produkter) => produkter.designer == "ClibKlap");
+const Helle = alleProdukter.filter((produkter) => produkter.designer == "Helle Hansen");
+const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clayform");
+---
+
+<Header />
+
+
+<main>
+  <!-- <IntroKeramiker_mark /> -->
+  <ProduktListe indhold={Mark} filter="Mark Lauberg" />
+  <!-- <IntroKeramiker_pia /> -->
+  <ProduktListe indhold={Pia} filter="Pia Lund" />
+  <!-- <IntroKeramiker_clibklap /> -->
+  <ProduktListe indhold={ClibKlap} filter="ClibKlap" />
+  <!-- <IntroKeramiker_helle /> -->
+  <ProduktListe indhold={Helle} filter="Helle Hansen" />
+  <!-- <IntroKeramiker_clayform /> -->
+  <ProduktListe indhold={Clayform} filter="Clayform" />
+</main>
+
+<Footer />
+
+<style>
+  @media (min-width: 1000px) {
+    .liste {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+</style>
