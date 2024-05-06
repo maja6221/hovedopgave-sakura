@@ -21,28 +21,194 @@
 <div class="grid1">
   <div class="event1">
     <img class="img2" src="../public/eventbilleder/matcha.png" alt="" />
-    <h3>Martiny Matcha event</h3>
-    <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
-    <button>SE EVENT</button>
+    <div>
+      <h3>Martiny Matcha event</h3>
+      <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
+      <button>SE EVENT</button>
+    </div>
   </div>
-  <div class="event1">
+  <div class="event2">
     <img class="img2" src="../public/eventbilleder/kintsugi.png" alt="" />
-    <h3>Kintsugi event</h3>
-    <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
-    <button>SE EVENT</button>
+    <div>
+      <h3>Kintsugi event</h3>
+      <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
+      <button>SE EVENT</button>
+    </div>
   </div>
-  <div class="event1">
+  <div class="event3">
     <img class="img2" src="../public/eventbilleder/origami.png" alt="" />
-    <h3>Orifami event</h3>
-    <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
-    <button>SE EVENT</button>
+    <div>
+      <h3>Orifami event</h3>
+      <h4>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h4>
+      <button>SE EVENT</button>
+    </div>
   </div>
+</div>
 
-  <style>
-    /* mobilefirst version */
+<style>
+  /* mobilefirst version */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .div1 {
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .divimg {
+    order: -1;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+  }
+
+  .event1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 5%;
+    background-color: #c1b7a7;
+  }
+
+  .event2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 5%;
+    background-color: #c1b7a7;
+  }
+
+  .event3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 5%;
+    background-color: #c1b7a7;
+  }
+
+  .img2 {
+    margin-inline: 7%;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    width: 87%;
+  }
+
+  .img1 {
+    width: 70%;
+  }
+
+  .overskrift_events {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 23px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 15px;
+    padding-bottom: 27px;
+  }
+
+  h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    padding-bottom: 23px;
+    padding-top: 15px;
+  }
+
+  button {
+    border: none;
+    padding: 12px;
+    background-color: #812429;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #812429;
+    cursor: pointer;
+    width: 40%;
+  }
+
+  button:hover {
+    background-color: #812429;
+    color: black;
+  }
+
+  /* desktop version */
+  @media (min-width: 1000px) {
     .grid {
       display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #f4ede5;
+    }
+
+    .grid1 {
+      display: grid;
       grid-template-columns: 1fr;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+
+    .img1 {
+      width: 50%;
+    }
+
+    .divimg {
+      order: 1;
+      margin-top: 5%;
+    }
+
+    .img2 {
+      width: 90%;
+      margin-left: 7%;
+      padding-bottom: 60px;
+    }
+
+    .event1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-right: 7%;
+      padding-top: 38px;
+    }
+    .event2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-right: 7%;
+      padding-top: 38px;
+    }
+    .event3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-right: 7%;
+      padding-top: 38px;
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      background-color: #812429;
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+      border-radius: 40px;
+      color: #f4ede5;
+      cursor: pointer;
+      width: 23%;
+    }
+
+    button:hover {
+      background-color: #d3bcb0;
+      color: black;
     }
 
     .div1 {
@@ -51,178 +217,8 @@
       margin-bottom: 5%;
     }
 
-    .divimg {
-      order: -1;
-    }
-
-    .grid1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    .event1 {
-      margin-inline: 5%;
-      background-color: #c1b7a7;
-    }
-
-    .img2 {
-      margin-inline: 7%;
-      padding-top: 38px;
-      padding-bottom: 20px;
-      width: 87%;
-    }
-
-    .img1 {
+    .img {
       width: 70%;
     }
-
-    .overskrift_events {
-      font-family: "commuters-sans", sans-serif;
-      font-size: 23px;
-      padding-bottom: 30px;
-    }
-
-    p {
-      font-family: "Raleway", sans-serif;
-      line-height: 1.5em;
-      font-size: 15px;
-      padding-bottom: 15px;
-    }
-
-    h3 {
-      font-family: "commuters-sans", sans-serif;
-      font-size: 15px;
-      padding-bottom: 27px;
-    }
-
-    h4 {
-      font-family: "Raleway", sans-serif;
-      font-size: 15px;
-      padding-bottom: 23px;
-      padding-top: 15px;
-    }
-
-    button {
-      border: none;
-      padding: 12px;
-      background-color: #812429;
-      font-family: "Raleway", sans-serif;
-      font-size: 15px;
-      border-radius: 5px;
-      color: #812429;
-      cursor: pointer;
-      width: 40%;
-    }
-
-    button:hover {
-      background-color: #812429;
-      color: black;
-    }
-
-    /* ipad/tablet version */
-    @media (min-width: 820px) {
-      button {
-        border: none;
-        padding: 15px;
-        background-color: #812429;
-        font-family: "Raleway", sans-serif;
-        font-size: 13px;
-        border-radius: 5px;
-        color: #f4ede5;
-        cursor: pointer;
-        width: 25%;
-      }
-    }
-
-    /* desktop version */
-    @media (min-width: 1000px) {
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #f4ede5;
-      }
-
-      .grid1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 40px;
-        padding-bottom: 30px;
-      }
-
-      .img1 {
-        width: 50%;
-      }
-
-      .divimg {
-        order: 1;
-        margin-top: 5%;
-      }
-
-      .img2 {
-        width: 90%;
-        margin-left: 7%;
-        padding-bottom: 60px;
-      }
-
-      .event1 {
-        margin-right: 7%;
-        padding-top: 38px;
-      }
-
-      .overskrift_events {
-        font-family: "commuters-sans", sans-serif;
-        font-size: 30px;
-        padding-bottom: 30px;
-      }
-
-      p {
-        font-family: "Raleway", sans-serif;
-        line-height: 2em;
-        font-size: 15px;
-        padding-bottom: 20px;
-      }
-
-      h3 {
-        font-family: "commuters-sans", sans-serif;
-        font-size: 20px;
-        padding-bottom: 27px;
-      }
-
-      h4 {
-        font-family: "Raleway", sans-serif;
-        font-size: 15px;
-        padding-bottom: 27px;
-        padding-top: 22px;
-      }
-
-      button {
-        border: none;
-        padding: 15px;
-        background-color: #812429;
-        font-family: "Raleway", sans-serif;
-        font-size: 13px;
-        border-radius: 40px;
-        color: #f4ede5;
-        cursor: pointer;
-        width: 23%;
-      }
-
-      button:hover {
-        background-color: #d3bcb0;
-        color: black;
-      }
-
-      .div1 {
-        margin-inline: 15%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-      }
-
-      .img1 {
-        width: 70%;
-      }
-    }
-  </style>
-</div>
+  }
+</style>
