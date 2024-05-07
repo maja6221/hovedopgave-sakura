@@ -1,4 +1,5 @@
 ---
+//@ts-nocheck
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import "../../style/mutual.css";
@@ -15,7 +16,8 @@ export async function getStaticPaths() {
   const response = await fetch(url, options);
   const data = await response.json();
 
-  
+  console.log(data)
+
   return data.map((shop) => ({
     params: { slug: shop.slug },
     props: { shop },
@@ -23,7 +25,7 @@ export async function getStaticPaths() {
 }
 
 const { shop } = Astro.props;
-console.log(shop)
+
 ---
 
 

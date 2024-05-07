@@ -17,11 +17,13 @@ const options = {
 const response = await fetch(url, options);
 const alleProdukter = await response.json();
 
-const Mark = alleProdukter.filter((produkter) => produkter.designer == "Mark Lauberg");
-const Pia = alleProdukter.filter((produkter) => produkter.designer == "Pia Lund");
-const ClibKlap = alleProdukter.filter((produkter) => produkter.designer == "ClibKlap");
-const Helle = alleProdukter.filter((produkter) => produkter.designer == "Helle Hansen");
-const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clayform");
+const Kop = alleProdukter.filter((produkter) => produkter.kategori == "Kop");
+const Piskerisholder = alleProdukter.filter((produkter) => produkter.kategori == "Piskerisholder");
+const Tilbehoer = alleProdukter.filter((produkter) => produkter.kategori == "Tilbehoer");
+const Te = alleProdukter.filter((produkter) => produkter.kategori == "Te");
+
+
+
 ---
 
 <Header />
@@ -29,16 +31,17 @@ const Clayform = alleProdukter.filter((produkter) => produkter.designer == "Clay
 
 <main>
   <!-- <IntroKeramiker_mark /> -->
-  <ProduktListe indhold={Mark} filter="Mark Lauberg" />
+  <ProduktListe indhold={Kop} filter="Kop" />
   <!-- <IntroKeramiker_pia /> -->
-  <ProduktListe indhold={Pia} filter="Pia Lund" />
+  <ProduktListe indhold={Piskerisholder} filter="Piskerisholder" />
   <!-- <IntroKeramiker_clibklap /> -->
-  <ProduktListe indhold={ClibKlap} filter="ClibKlap" />
+  <ProduktListe indhold={Tilbehoer} filter="Tilbehoer" />
   <!-- <IntroKeramiker_helle /> -->
-  <ProduktListe indhold={Helle} filter="Helle Hansen" />
-  <!-- <IntroKeramiker_clayform /> -->
-  <ProduktListe indhold={Clayform} filter="Clayform" />
+  <ProduktListe indhold={Te} filter="Te" />
+ 
 </main>
+
+<!-- alleProdukter.map -->
 
 <Footer />
 

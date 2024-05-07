@@ -2,12 +2,13 @@
 const { indhold } = Astro.props;
 import Produktkort from "../components/Produktkort.astro";
 import { Debug } from "astro/components";
+
 ---
 
 <section>
   {
     indhold.map((produkter) => (
-      <Produktkort aktiv={produkter.aktiv} link={"/produkt/" + produkter.slug} image={`/produktbilleder/${produkter.image}`} overskrift={produkter.overskrift} designer={produkter.designer} pris={produkter.pris} tekst={produkter.tekst} />
+      <Produktkort aktiv={produkter.aktiv} link={"/produkt/" + produkter.slug} image={`/produktbilleder/${produkter.image}`} overskrift={produkter.overskrift} kategori={produkter.kategori} pris={produkter.pris} tekst={produkter.tekst} />
     ))
   }
 </section>

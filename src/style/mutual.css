@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: var(--Semantik-Baggrund-Beige); */
 }
 
 /* til desktop version */
@@ -26,96 +27,36 @@ h5 {
   font-size: 20px;
 }
 
-.p1 {
+p1 {
   font-size: 15px;
 }
 
-.p2 {
+p2 {
   font-size: 15px;
   font-weight: bold;
 }
 
-.p3 {
+p3 {
   font-size: 20px;
 }
 
-.p4 {
+p4 {
   font-size: 20px;
   font-weight: bold;
 }
 
-.p5 {
+p5 {
   font-size: 30px;
 }
 
-.p6 {
+p6 {
   font-size: 30px;
   font-weight: bold;
-}
-
-/* til mobil version */
-
-.h1_mobil {
-  font-size: 40px;
-}
-
-.h2_mobil {
-  font-size: 30px;
-}
-
-.h3_mobil {
-  font-size: 20px;
-}
-
-.h4_mobil {
-  font-size: 15px;
-}
-
-.p1_mobil {
-  font-size: 13px;
-}
-
-.p2_mobil {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.p3_mobil {
-  font-size: 15px;
-}
-
-.p4_mobil {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.p5_mobil {
-  font-size: 10px;
 }
 
 
 
 :root {
-  --Semantik-10: #7E2323;
---Semantik-Baggrund-Beige: var(--Primitives-Farver-Beige-01);
---Semantik-Baggrund-Brown: var(--Primitives-Farver-Brun-05);
---Semantik-Baggrund-Lysebrun: var(--Primitives-Farver-Brun-03);
---Semantik-Footer-Brown: var(--Primitives-Farver-Brun-05);
---Semantik-Knap-Brown: var(--Primitives-Farver-Brun-05);
---Semantik-Knap-Hvid: var(--Primitives-Farver-Hvid-sort-01);
---Semantik-Knap-Red: var(--Primitives-Farver-Rød-05);
---Semantik-Text-Knaptext-Black: var(--Primitives-Farver-Hvid-sort-09);
---Semantik-Text-Knaptext-Brun: var(--Primitives-Farver-Brun-05);
---Semantik-Text-Knaptext-Green: var(--Primitives-Farver-Grøn-07);
---Semantik-Text-Knaptext-White: var(--Primitives-Farver-Hvid-sort-01);
---Semantik-Text-Knaptext-red: var(--Primitives-Farver-Rød-05);
---Semantik-Text-Overskrift-Black: var(--Primitives-Farver-Hvid-sort-09);
---Semantik-Text-Overskrift-Green: var(--Primitives-Farver-Grøn-07);
---Semantik-Text-Overskrift-Hvid: var(--Primitives-Farver-Hvid-sort-01);
---Semantik-Text-Overskrift-Lightgreen: var(--Primitives-Farver-Grøn-05);
---Semantik-Text-Overskrift-Red: var(--Primitives-Farver-Rød-05);
---Semantik-Text-brødtekst-White: var(--Primitives-Farver-Hvid-sort-01);
---Semantik-Text-brødtekst-black: var(--Primitives-Farver-Hvid-sort-09)
 
 --Primitives-Farver-Beige-01: #F5EEE6;
 --Primitives-Farver-Beige-02: #F3EBE2;
@@ -162,4 +103,27 @@ h5 {
 --Primitives-Farver-Rød-07: #5F1B1E;
 --Primitives-Farver-Rød-08: #501619;
 --Primitives-Farver-Rød-09: #401214
+
+  --Semantik-10: #7E2323;
+  --Semantik-Baggrund-Beige: var(--Primitives-Farver-Beige-01);
+--Semantik-Baggrund-Brown: var(--Primitives-Farver-Brun-05);
+--Semantik-Baggrund-Lysebrun: var(--Primitives-Farver-Brun-03);
+--Semantik-Footer-Brown: var(--Primitives-Farver-Brun-05);
+--Semantik-Knap-Brown: var(--Primitives-Farver-Brun-05);
+--Semantik-Knap-Hvid: var(--Primitives-Farver-Hvid-sort-01);
+--Semantik-Knap-Red: var(--Primitives-Farver-Rød-05);
+--Semantik-Text-Knaptext-Black: var(--Primitives-Farver-Hvid-sort-09);
+--Semantik-Text-Knaptext-Brun: var(--Primitives-Farver-Brun-05);
+--Semantik-Text-Knaptext-Green: var(--Primitives-Farver-Grøn-07);
+--Semantik-Text-Knaptext-White: var(--Primitives-Farver-Hvid-sort-01);
+--Semantik-Text-Knaptext-red: var(--Primitives-Farver-Rød-05);
+--Semantik-Text-Overskrift-Black: var(--Primitives-Farver-Hvid-sort-09);
+--Semantik-Text-Overskrift-Green: var(--Primitives-Farver-Grøn-07);
+--Semantik-Text-Overskrift-Hvid: var(--Primitives-Farver-Hvid-sort-01);
+--Semantik-Text-Overskrift-Lightgreen: var(--Primitives-Farver-Grøn-05);
+--Semantik-Text-Overskrift-Red: var(--Primitives-Farver-Rød-05);
+--Semantik-Text-brødtekst-White: var(--Primitives-Farver-Hvid-sort-01);
+--Semantik-Text-brødtekst-black: var(--Primitives-Farver-Hvid-sort-09)
+
+
 }
