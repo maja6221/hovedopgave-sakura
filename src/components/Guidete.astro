@@ -2,7 +2,7 @@
 <div class="te_boks">
     <div class="boks1">
     <h4 class="overskrift_1">Hvad skal du bruge?</h4>
-    <img class="billde_te" src="/public/images/ting.png" alt="billede1">
+    <img class="billde_te" src="/images/ting.png" alt="billede1">
     </div>
     <div>
     <h4 class="overskrift_2">Ingredienser</h4>
@@ -21,26 +21,7 @@
 
 <style>
 
-/* mobil version */ 
-      .te_boks{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 10px 50px 50px 50px;
-    } 
-
-/* ipad/tablet version */ 
-   @media (min-width: 820px) {
-    .te_boks{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        padding: 10px 50px 50px 50px;
-    }
-   }
-
-/* desktop version */ 
-    @media (min-width: 1000px) {
+    /* desktop version */ 
     .te_boks{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -52,7 +33,7 @@
     }
 
     .rundt_om_boks{
-        padding: 100px 50px 50px 50px;
+        padding: 60px 50px 50px 50px;
     }
     h4{
         padding-top: 20px;
@@ -67,17 +48,27 @@
     .overskrift_2{
         gap: 10px;
         padding: 20px 20px 20px 20px;
+        padding-top: 30px;
     }
 
     h2{
         color: var(--Semantik-Text-Overskrift-Green);
+        padding-left: 10px;
+     }
+
+     p{
+        font-size: 20px;
+        padding-top: 25px;
+        padding-left: 10px;
      }
 
     .boks1{
         gap: 10px;
         /* padding-top: 10px; */
-        padding-left: 10px;
+        padding-left: 20px;
         padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .boks_2{
         display: flex;
@@ -92,6 +83,85 @@
 
      .billde_te{
         width: 110%;
+     }
+
+     /* ipad/tablet version */ 
+   /* @media (max-width: 1024px) {
+    .te_boks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px 50px 50px 50px;
+    }
+   } */
+
+    /* mobil version */ 
+    @media (max-width: 820px){
+      .te_boks{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0px 5px 10px 0px;
+        background-color: var(--Semantik-Baggrund-Brown);
+    } 
+
+    .billde_te{
+        width: 100%;
+        height: auto;
+        padding-top: 7px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    h2{
+        color: var(--Semantik-Text-Overskrift-Green);
+        padding-left: 10px;
+        font-size: 40px;
+     }
+
+     .overskrift_1{
+        gap: 11px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 0px;
+        font-size: 20px;
+     }
+
+     .overskrift_2{
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        
+     }
+
+     .boks1{
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+
+    .boks_3{
+        display: flex;
+        gap: 10px;
+    }
+
+    .boks_2{
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    p{
+        padding-top: 7px;
+        padding-left: 10px;
+        font-size: 15px;
+     }
+
+     .rundt_om_boks{
+        padding: 0px;
      }
 
     }
