@@ -4,27 +4,76 @@
 </div>
 <section class="event">
   <div>
-    <img class="img2" src=" ..public eventbilleder single.jpg" alt="" />
+    <img class="img2" src="../public/eventbilleder/single.jpg" alt="" />
   </div>
-  <h3>Deltag i Matcha event</h3>
-  <p>
-    Matcha består af helt fintmalede grønne teblade og indeholder alle de mange
-    mineraler, antioxidanter og vitaminer, som grøn te er kendt for. Mange
-    drikker matcha som en erstatning for kaffe, imens de nyder den
-    karaktersitiske og komplekse smag. Noget matcha kan smage bittert. Men hvis
-    teen tilberedes på den helt rigtige måde, ved den rette temperatur, vil teen
-    smage fyldig, let sød og frisk.
-  </p>
-  <p>
-    I samarbejde med Martinis Matcha, afholder Sakura Copenhagen et matcha event
-    og workshop. Her har du mulighed for at lære mere om matcha, hvordan det
-    tilberedes og de sundhedsmæssige fordele det har.
-  </p>
+  <div class="første">
+    <h3>Deltag i Matcha event</h3>
+    <p>
+      Matcha består af helt fintmalede grønne teblade og indeholder alle de
+      mange mineraler, antioxidanter og vitaminer, som grøn te er kendt for.
+      Mange drikker matcha som en erstatning for kaffe, imens de nyder den
+      karaktersitiske og komplekse smag. Noget matcha kan smage bittert. Men
+      hvis teen tilberedes på den helt rigtige måde, ved den rette temperatur,
+      vil teen smage fyldig, let sød og frisk.
+    </p>
+    <p>
+      I samarbejde med Martinis Matcha, afholder Sakura Copenhagen et matcha
+      event og workshop. Her har du mulighed for at lære mere om matcha, hvordan
+      det tilberedes og de sundhedsmæssige fordele det har.
+    </p>
+    <h5>pris:<h3>250kr</h3></h5>
+  </div>
+</section>
 
-  <h3>pris</h3>
+<section class="event">
+  <div class="anden">
+    <h3>Ved Køb af Matcha event får du:</h3>
+    <div class="list">
+      <ol>
+        <li>1 stk Martiny’s Matcha pulver til en værdi af 189 kr</li>
+        <li>Information omkring matcha teens historie</li>
+        <li>Undervisning i at lave den perfekte matcha te eller latte</li>
+        <li>
+          Undervisning i de mange sundhedsmæssige fordele ved at drikke matcha
+        </li>
+        <li>15% på alle matcha produkter i butikken</li>
+      </ol>
+    </div>
+    <div class="pris">
+      <h5>pris:<h3>250kr</h3></h5>
+    </div>
+  </div>
+  <div>
+    <img class="img2" src="../public/eventbilleder/single1.jpg" alt="" />
+  </div>
 </section>
 
 <style>
+  html {
+    background-color: var(--Semantik-Baggrund-Beige);
+  }
+
+  .pris {
+  }
+  .event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .første {
+    margin-left: 10%;
+  }
+
+  .anden {
+    margin-right: 10%;
+  }
+  .list {
+    margin-inline: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   h1 {
     position: absolute;
     top: 50%;
@@ -36,7 +85,7 @@
     width: 100%;
   }
   .img2 {
-    width: 50%;
+    width: 100%;
   }
 
   @media (min-width: 1000px) {
