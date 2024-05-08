@@ -7,6 +7,8 @@ import Guidelatte2 from "../components/Guidelatte2.astro";
 
 <Header/>
 
+<body>
+
 <h1>Guide til matcha latte</h1>
 
 <Guidelatte/>
@@ -14,8 +16,14 @@ import Guidelatte2 from "../components/Guidelatte2.astro";
 <h2>Sådan laver du matcha latte:</h2>
 <Guidelatte2 />
 
+</body>   
+
 <style>
     /* desktop version */ 
+
+    body{
+        background-color: var(--Semantik-Baggrund-Beige);
+    }
     h1{
         text-align: center;
         gap: 10px;
@@ -48,6 +56,6 @@ import Guidelatte2 from "../components/Guidelatte2.astro";
         padding-bottom: 20px;
         font-size: 30px;
     }
-    }
+    } 
 
 </style>
