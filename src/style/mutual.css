@@ -6,13 +6,13 @@
 }
 
 @font-face {
-  font-family: avenirnextltpro-bold;
-  src: url("avenirnextltpro-bold-webfont.woff2") format("woff2");
+  font-family: avenirnext-regular;
+  src: url("avenirnext-regular-webfont.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: didotltstd-bold;
-  src: url("didotltstd-bold-webfont.woff2") format("woff2");
+  font-family: didotltstd-roman;
+  src: url("didotltstd-roman-webfont.woff2") format("woff2");
 }
 
 /* til desktop version */
