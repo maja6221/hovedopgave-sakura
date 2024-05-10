@@ -1,0 +1,60 @@
+<section>
+
+<div class="images">
+<div class="div1"><img src="/images/event1.png" alt="matcha"></div>
+   
+<div class="div2"><img class="img1" src="/images/event2.png" alt="matcha1"></div>
+  
+<div class="div3"><img src="/images/event3.png" alt="matcha2"></div>
+</div>
+
+</section>
+
+<style>
+    img {
+        border-radius: 30px;
+      
+        
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr ;
+        justify-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      
+        
+    }
+
+    .div2 {
+        display: none;
+    }
+    
+    @media (min-width: 1000px) {
+        img {
+        border-radius: 30px;
+    
+        
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+       
+    } 
+
+    .div2 {
+        display: contents;
+    }
+    }
+
+   
+
+   
+</style>
