@@ -1,0 +1,69 @@
+<section>
+    <div class="grid"><a href="eventside"><button> Se alle events</button></a></div>
+  </section>
+  <style>
+    section {
+      margin-inline: 15%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    button {
+      border: none;
+      padding: 20px;
+      background-color: var(--Semantik-Knap-Red);
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      border-radius: 50px;
+      color: var(--Semantik-Text-Knaptext-White);
+      cursor: pointer;
+      border-style: solid;
+    }
+  
+    button:hover {
+      background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
+      
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    @media (min-width: 1000px) {
+      section {
+        margin-inline: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      button {
+        border: none;
+        padding: 20px;
+        background-color: var(--Semantik-Knap-Red);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        border-radius: 50px;
+        color: var(--Semantik-Knap-Hvid);
+        cursor: pointer;
+        justify-items: center;
+        border-style: solid;
+      }
+  
+      button:hover {
+        background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+        color: var(--Semantik-Text-Knaptext-red);
+        
+      }
+  
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+  </style>
+  
