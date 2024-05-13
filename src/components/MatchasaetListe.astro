@@ -1,6 +1,6 @@
 ---
 const { indhold } = Astro.props;
-import Produktkort from "../components/Produktkort.astro";
+import Matchasaetkort from "../components/Matchasaetkort.astro";
 import { Debug } from "astro/components";
 
 ---
@@ -8,7 +8,7 @@ import { Debug } from "astro/components";
 <section>
   {
     indhold.map((produkter) => (
-      <Produktkort aktiv={produkter.aktiv} link={"/produkt/" + produkter.slug} image={`/produktbilleder/${produkter.image}`} overskrift={produkter.overskrift} kategori={produkter.kategori} pris={produkter.pris} tekst={produkter.tekst} />
+      <Matchasaetkort aktiv={produkter.aktiv} link={"/matchasaet/" + produkter.slug} image={`/matchasaetbilleder/${produkter.image}`} overskrift={produkter.overskrift} kategori={produkter.kategori} pris={produkter.pris} tekst={produkter.tekst} />
     ))
   }
 </section>
@@ -20,13 +20,13 @@ import { Debug } from "astro/components";
   }
 
   h4 {
-    font-family: "commuters-sans", sans-serif;
+    font-family: "didotltstd-roman";
     font-size: 20px;
     margin: 20px;
   }
 
   p {
-    font-family: "Raleway", sans-serif;
+    font-family: "avenirnext-regular";
     font-size: 15px;
     font-weight: bold;
     margin: 20px;
@@ -49,6 +49,7 @@ import { Debug } from "astro/components";
     display: grid;
     gap: 1em;
     padding-bottom: 8px;
+    padding-top: 30px;
   }
   @media screen and (min-width: 600px) {
     section {

@@ -1,0 +1,226 @@
+---
+//@ts-nocheck
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../style/mutual.css";
+
+export async function getStaticPaths() {
+  const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/matchasaet";
+
+  const options = {
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdHlwbGlucWd5Z25uYWdic2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2MzY2MjcsImV4cCI6MTk5NDIxMjYyN30.eim5AhzEGy_kEp2s9c-TN-mL3YdGy2KBYYxO4DX58ds",
+    },
+  };
+
+  const response = await fetch(url, options);
+  const data = await response.json();
+
+  console.log(data)
+
+  return data.map((matchasaet) => ({
+    params: { slug: matchasaet.slug },
+    props: { matchasaet },
+  }));
+}
+
+const { matchasaet } = Astro.props;
+
+---
+
+
+<Header />
+
+
+
+<section class="grid_singleview">
+  <div class="img">
+  <img class="billede" src={`/matchasaetbilleder/${matchasaet.image}`} alt="" />
+  </div>
+  <div class="grid2" >
+    <img src={matchasaet.image} alt="" />
+    <h2 class="overskrift">{matchasaet.overskrift}</h2>
+    <h3 class="kategori">{matchasaet.kategori}</h3>
+    <h4 class="pris">{matchasaet.pris} DKK</h4>
+    <div class="tekst">
+      <p>{matchasaet.tekst}</p>
+    </div>
+    <button>TILFØJ TIL KURV</button>
+    
+</section>
+
+<div class="andre_saet">
+    <h2>Se andre matcha sæt her</h2>  
+</div>
+
+
+
+<Footer />
+
+<style>
+  /* mobilefirst version*/
+
+  .grid_singleview {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .billede {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .overskrift {
+    font-family: "didotltstd-roman";
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .kategori {
+    font-family: "didotltstd-roman";
+    font-size: 20px;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .pris {
+    font-family: "didotltstd-roman";
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tekst {
+    font-family: "avenirnext-regular";
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    width: 200px;
+    border: none;
+    background-color: var(--Semantik-Knap-Red);
+    font-family: "avenirnextltpro-bold";
+    border-radius: 50px;
+    color: var(--Semantik-Text-Knaptext-White);
+    cursor: pointer;
+    /* padding: 10px; */
+    margin-top: 15px;
+    margin-left: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  button:hover {
+    background-color: #D3BCB0;
+    color: black;
+  }
+
+  body {
+  background-color: var(--Semantik-Baggrund-Beige);
+    }
+
+  /* tablet version*/
+  @media (min-width: 820px) {
+
+    /* .overskrift {
+      margin-left: 4%;
+    }
+
+    .kategori {
+      margin-left: 4%;
+    }
+
+    .tekst {
+      margin-left: 4%;
+    }
+
+    .pris {
+      margin-left: 4%;
+    }
+
+    button {
+      margin-left: 4%;
+    } */
+  }
+
+  /* desktop version*/
+  @media (min-width: 1000px) {
+    .grid_singleview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* top, rigth, bottom, left */
+      padding: 50px 0px 70px 35px;
+      gap: 35px;
+    }
+
+    .billede {
+      width: 100%;
+      height: auto;
+    border-radius: 30px;
+    }
+
+    .overskrift {
+      font-family:  "didotltstd-roman";
+      font-size: 50px;
+    }
+
+    .kategori {
+      font-family:  "didotltstd-roman";
+      font-size: 30px;
+      padding-top: 22px;
+      
+    }
+
+    .pris {
+      font-family: "didotltstd-roman";
+      font-size: 30px;
+      padding-top: 18px;
+    }
+
+    .tekst {
+      font-family: "avenirnext-regular";
+      line-height: 1.5em;
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 24px;
+      
+    }
+
+    button {
+      background-color: var(--Semantik-Knap-Red);
+      border-radius: 50px;
+      font-family: "avenirnext-regular";
+      color: var(--Semantik-Knap-Hvid);
+      cursor: pointer;
+      font-size: 15px;
+      width: 200px;
+      border: none;
+      /* margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px; */
+    }
+
+    button:hover {
+      background-color: #D3BCB0;
+      color: black;
+    }
+  }
+
+  .andre_saet{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+</style>
