@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import ProduktListe from "../components/ProduktListe.astro";
 import { Debug } from "astro/components";
 import Produktkort from "../components/Produktkort.astro";
+import Minimenu from "../components/Minimenu.astro";
 
 const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/shop";
 
@@ -30,6 +31,7 @@ const Te = alleProdukter.filter((produkter) => produkter.kategori == "Te");
 
 <h1>Matcha tilbehør</h1>
 
+<Minimenu />
 
 <main>
 <!-- 
