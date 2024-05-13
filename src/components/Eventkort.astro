@@ -1,6 +1,5 @@
 <div class="grid">
   <div class="div1">
-    <h2 class="overskrift_events">KOMMENDE EVENTS</h2>
     <p>
       Året igennem afholder Viktoria Ceramic Studio forskellige events og
       workshops. Vi deltager også på forskellige internationale udstillinger og
@@ -10,14 +9,14 @@
       Vi har blandt andet set stor interesse i vores årlige julemarkeder, som vi
       afholder en gang om året. Her kan du finde 2. sorterings salg af keramik,
       skitser og udgåede varer. Her er det muligt at finde en unik keramisk gave
+      eller forkæle dig selv med dansk håndlavet design til gode priser. Vi har
+      blandt andet set stor interesse i vores årlige julemarkeder, som vi
+      afholder en gang om året. Her kan du finde 2. sorterings salg af keramik,
+      skitser og udgåede varer. Her er det muligt at finde en unik keramisk gave
       eller forkæle dig selv med dansk håndlavet design til gode priser.
     </p>
   </div>
-  <div class="divimg">
-    <!-- <img class="img1" src="../public/eventbilleder/matcha.JPG" alt="" /> -->
-  </div>
 </div>
-
 <!-- <div class="grid1"> -->
 <div class="event1">
   <img class="img3" src="../public/eventbilleder/matcha.png" alt="" />
@@ -25,7 +24,7 @@
     <h3>Martiny Matcha event</h3>
     <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
     <div class="knap">
-      <a href="event_single"><button>SE EVENT</button></a>
+      <a href="event_single"><button>LÆS MERE</button></a>
     </div>
   </div>
 </div>
@@ -36,7 +35,7 @@
     <h3>Kintsugi event</h3>
     <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
     <div class="knap">
-      <button>SE EVENT</button>
+      <button>LÆS MERE</button>
     </div>
   </div>
 </div>
@@ -46,76 +45,134 @@
     <h3>Orifami event</h3>
     <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
     <div class="knap">
-      <button>SE EVENT</button>
+      <button>LÆS MERE</button>
     </div>
   </div>
-  <!-- </div> -->
+</div>
+<!-- </div> -->
 
-  <style>
-    /* mobilefirst version */
+<style>
+  /* mobilefirst version */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .div1 {
+    margin-inline: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .divimg {
+    order: -1;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .event1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    background-color: var(--Primitives-Farver-Brun-06);
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .event2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    background-color: var(--Primitives-Farver-Brun-06);
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .event3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    background-color: var(--Primitives-Farver-Brun-06);
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  /* .img1 {
+      margin-inline: 7%;
+      padding-top: 38px;
+      padding-bottom: 20px;
+      width: 87%;
+    } */
+
+  .img3 {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .overskrift_events {
+    font-family: "commuters-sans", sans-serif;
+    font-size: 23px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    padding-bottom: 27px;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  h5 {
+    padding-bottom: 23px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .knap {
+    padding: 10%;
+    text-align: right;
+  }
+  button {
+    border: none;
+    padding: 12px;
+    background-color: var(--Semantik-Knap-Red);
+    color: var(--Semantik-Text-Knaptext-White);
+    font-size: 15px;
+    border-radius: 20px;
+    width: 40%;
+  }
+
+  button:hover {
+    background-color: var(--Semantik-Knap-Red);
+    color: var(--Semantik-Text-Knaptext-Black);
+  }
+
+  /* desktop version */
+  @media (min-width: 1000px) {
     .grid {
       display: grid;
       grid-template-columns: 1fr;
-    }
-
-    .div1 {
-      margin-inline: 15%;
-      margin-top: 10%;
-      margin-bottom: 5%;
-    }
-
-    .divimg {
-      order: -1;
+      background-color: var(--Semantik-Baggrund-Beige);
     }
 
     .grid1 {
       display: grid;
       grid-template-columns: 1fr;
-    }
-
-    .event1 {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin-inline: 5%;
-    }
-
-    .event2 {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin-inline: 5%;
-    }
-
-    .event3 {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin-inline: 5%;
-    }
-
-    .img1 {
-      margin-inline: 7%;
-      padding-top: 38px;
-      padding-bottom: 20px;
-      width: 87%;
-    }
-
-    .img1 {
-      width: 70%;
-    }
-
-    .overskrift_events {
-      font-family: "commuters-sans", sans-serif;
-      font-size: 23px;
+      padding-top: 40px;
       padding-bottom: 30px;
+      text-align: center;
     }
-
-    p {
-      font-family: "Raleway", sans-serif;
-      line-height: 1.5em;
-      font-size: 15px;
-      padding-bottom: 15px;
+    .div1 {
+      margin-inline: 15%;
+      margin-top: 20%;
     }
-
-    h4 {
+    h3 {
+      padding-top: 5%;
       padding-bottom: 27px;
       padding-left: 27px;
       text-align: left;
@@ -127,123 +184,63 @@
       text-align: left;
       padding-left: 27px;
     }
-    .knap {
-      justify-content: right;
+
+    .img1 {
+      width: 70%;
     }
+
+    .divimg {
+      order: 1;
+      margin-top: 5%;
+    }
+
+    .img3 {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .event1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 5%;
+      background-color: var(--Primitives-Farver-Brun-06);
+      border-radius: 10px 10px 10px 10px;
+    }
+    .event2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 5%;
+      background-color: var(--Primitives-Farver-Brun-06);
+      border-radius: 10px 10px 10px 10px;
+    }
+    .event3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 5%;
+      background-color: var(--Primitives-Farver-Brun-06);
+      border-radius: 10px 10px 10px 10px;
+    }
+
     button {
-      border: none;
-      padding: 12px;
+      right: 40%;
+      padding: 15px;
       background-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Baggrund-Beige);
       font-size: 15px;
-      border-radius: 5px;
-      color: var(--Semantik-Knap-Red);
-      cursor: pointer;
-      width: 40%;
-      justify-content: right;
+      border-radius: 40px;
+      width: 50%;
     }
 
     button:hover {
-      background-color: var(--Semantik-Knap-Red);
-      color: var(--Semantik-Text-Knaptext-Black);
+      background-color: var(--Semantik-Baggrund-Beige);
+      color: black;
     }
 
-    /* desktop version */
-    @media (min-width: 1000px) {
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        background-color: var(--Semantik-Baggrund-Beige);
-      }
-
-      .grid1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        text-align: center;
-      }
-      .div1 {
-        margin-inline: 15%;
-        margin-top: 20%;
-        margin-bottom: 5%;
-      }
-      h3 {
-        padding-top: 5%;
-        padding-bottom: 27px;
-        padding-left: 27px;
-        text-align: left;
-      }
-
-      h5 {
-        padding-bottom: 23px;
-        padding-top: 15px;
-        text-align: left;
-        padding-left: 27px;
-      }
-
-      .img1 {
-        width: 70%;
-      }
-
-      .divimg {
-        order: 1;
-        margin-top: 5%;
-      }
-
-      .img3 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px 0px 0px 10px;
-      }
-
-      .event1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 5%;
-        background-color: var(--Primitives-Farver-Brun-06);
-        border-radius: 10px 10px 10px 10px;
-      }
-      .event2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 5%;
-        background-color: var(--Primitives-Farver-Brun-06);
-        border-radius: 10px 10px 10px 10px;
-      }
-      .event3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 5%;
-        background-color: var(--Primitives-Farver-Brun-06);
-        border-radius: 10px 10px 10px 10px;
-      }
-      .knap {
-      }
-      button {
-        right: 40%;
-        padding: 15px;
-        background-color: var(--Semantik-Knap-Red);
-        font-size: 13px;
-        border-radius: 40px;
-        color: var(--Semantik-Baggrund-Beige);
-        cursor: pointer;
-        width: 20%;
-      }
-
-      button:hover {
-        background-color: var(--Semantik-Baggrund-Beige);
-        color: black;
-      }
-
-      .div1 {
-        margin-inline: 15%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-      }
-
-      .img {
-        width: 70%;
-      }
+    .div1 {
+      margin-inline: 15%;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
-  </style>
-</div>
+  }
+</style>
