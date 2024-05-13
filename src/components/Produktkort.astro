@@ -22,24 +22,28 @@ console.log(data);
     border-radius: 30px;
   }
 
-  button {
-    font-family: "Raleway", sans-serif;
+  button{
+        font-family: "commuters-sans", sans-serif;
+      text-align: center;
+      cursor: pointer;
+      font-family: "avenirnext-regular";
     font-size: 15px;
-    margin: 20px;
-    width: 200px;
+    margin: 10px;
+    width: 240px;
     border: none;
-    background-color: #977a15;
-    color: white;
+    background-color: var(--Semantik-Knap-Red);
+    color: var(--Semantik-Knap-Hvid);
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: solid;
     padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  button:hover {
-    background-color: #d3bcb0;
-    color: black;
-    cursor: pointer;
-  }
+    }
+    button:hover {
+      background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
+    }
 
   .div1 {
     display: grid;
@@ -51,7 +55,6 @@ console.log(data);
   }
 
   h3 {
-    font-family: "commuters-sans", sans-serif;
     font-size: 20px;
     padding-bottom: 10px;
     color: black;
@@ -59,7 +62,7 @@ console.log(data);
   }
 
   h4 {
-    font-family: "Raleway", sans-serif;
+    font-family: "avenirnext-regular";
     font-size: 18px;
     padding-bottom: 5px;
     padding-top: 10px;
@@ -89,15 +92,15 @@ console.log(data);
     }
 
     h3 {
-      font-family: "commuters-sans", sans-serif;
+      font-family: "didotltstd-roman";
       font-size: 20px;
       padding-bottom: 10px;
       color: black;
     }
 
     h4 {
-      font-family: "Raleway", sans-serif;
-      font-size: 18px;
+      font-family: "avenirnext-regular";
+      font-size: 20px;
       padding-bottom: 10px;
       color: grey;
     }
