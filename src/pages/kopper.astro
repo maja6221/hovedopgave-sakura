@@ -1,0 +1,78 @@
+---
+import Footer from "../components/Footer.astro";
+import "../style/mutual.css";
+import Header from "../components/Header.astro";
+import ProduktListe from "../components/ProduktListe.astro";
+import { Debug } from "astro/components";
+import Produktkort from "../components/Produktkort.astro";
+
+const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/shop";
+
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdHlwbGlucWd5Z25uYWdic2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2MzY2MjcsImV4cCI6MTk5NDIxMjYyN30.eim5AhzEGy_kEp2s9c-TN-mL3YdGy2KBYYxO4DX58ds",
+  },
+};
+
+const response = await fetch(url, options);
+const alleProdukter = await response.json();
+
+const Kop = alleProdukter.filter((produkter) => produkter.kategori == "Kop");
+const Piskerisholder = alleProdukter.filter((produkter) => produkter.kategori == "Piskerisholder");
+const Tilbehoer = alleProdukter.filter((produkter) => produkter.kategori == "Tilbehoer");
+const Te = alleProdukter.filter((produkter) => produkter.kategori == "Te");
+
+
+
+---
+
+<Header />
+
+<h1>Matcha kopper</h1>
+
+
+<main>
+<!-- 
+  <ProduktListe indhold={alleProdukter} filter="alleProdukter" /> -->
+ 
+  <ProduktListe indhold={Kop} filter="Kop" />
+
+  <!-- <ProduktListe indhold={Piskerisholder} filter="Piskerisholder" /> -->
+  
+  <!-- <ProduktListe indhold={Tilbehoer} filter="Tilbehoer" /> -->
+ 
+  <!-- <ProduktListe indhold={Te} filter="Te" /> -->
+ 
+</main>
+
+<!-- alleProdukter.map -->
+
+<Footer/>
+
+<style>
+
+  h1{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-family: "didotltstd-roman";
+  }
+
+  body {
+  background-color: var(--Semantik-Baggrund-Beige);
+}
+
+  @media (max-width: 820px){
+    h1{
+      font-size: 40px;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .liste {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+</style>
