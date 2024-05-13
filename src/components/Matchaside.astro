@@ -1,7 +1,14 @@
 <section id="jump3">
     <div class="grid_opacity">
          
-
+      <div id="cafe-container" class="container">
+        <a href="guide_latte">
+        <img src="./images/matcha5-kopi.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text"><a class="txt1" href="/">Din matcha guide</a></div>
+        </div>
+      </a>
+      </div> 
           <div id="cafe-container" class="container">
             <a href="guide_te">
             <img src="./images/te.jpg" alt="Avatar" class="image" style="width:100%">
@@ -17,38 +24,98 @@
               <div class="text"><a class="txt1" href="guide_latte">Guide til matcha latte</a></div>
             </div>
           </a>
-          </div> 
-
-          <div id="cafe-container" class="container">
-            <a href="guide_latte">
-            <img src="./images/latte1.jpg" alt="Avatar" class="image" style="width:100%">
-            <div class="middle">
-              <div class="text"><a class="txt1" href="guide_latte">Guide til matcha latte</a></div>
-            </div>
-          </a>
-          </div> 
+          </div>
+    </div>
          
 </section>
     
       <style>
     
+    /* desktop version */ 
+    a {
+    cursor: pointer;
+  }
+    section{
+      margin-inline: 50px;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    padding-inline: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 30px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: rgba(255, 255, 255, 0.679);
+    font-size: 16px;
+    padding: 16px 20px;
+    white-space: nowrap;
+    font-family: "commuters-sans", sans-serif;
+   
+  }
+  
+  .txt1 {
+      text-decoration: none;
+      color: black;
+  }
+  .txt1:hover {
+      text-decoration: none;
+      color: var(--Semantik-Knap-Red);
+  }
+  
+  .grid_opacity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 100px;
     
+  }
+
+  /* mobil version */ 
+    @media (max-width: 820px){
     section {
       margin-inline: 1%;
       margin-top: 0%;
       margin-bottom: 5%;
     }
-    
-    
+  
     .grid_opacity {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1f 1fr;
-    
+        padding-bottom: 30px;
       }
-    
-    
-    
+
     .container {
       position: relative;
       width: 100%;
@@ -109,81 +176,7 @@
     a {
       cursor: pointer;
     }
-    @media (min-width: 1000px) {
-    
-      a {
-      cursor: pointer;
-    }
-      section{
-        margin-inline: 50px;
-        margin-top: 0%;
-        margin-bottom: 0%;
-      }
-      
-     
-        }
-    
-    .container {
-      position: relative;
-      width: 100%;
-      padding-inline: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-    
-    .image {
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-      border-radius: 30px;
-    }
-    
-    .middle {
-      transition: .5s ease;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    
-    .container:hover .image {
-      opacity: 0.3;
-    }
-    
-    .container:hover .middle {
-      opacity: 1;
-    }
-    
-    .text {
-      background-color: rgba(255, 255, 255, 0.679);
-      font-size: 16px;
-      padding: 16px 20px;
-      white-space: nowrap;
-      font-family: "commuters-sans", sans-serif;
-     
-    }
-    
-    .txt1 {
-        text-decoration: none;
-        color: black;
-    }
-    .txt1:hover {
-        text-decoration: none;
-        color: var(--Semantik-Knap-Red);
-    }
-    
-    
-    
-    .grid_opacity {
-      display: grid;
-      grid-template-columns: 1fr 1fr  ;
-      grid-template-rows: 1fr;
-      
-    }
+
+  }
       
       </style>

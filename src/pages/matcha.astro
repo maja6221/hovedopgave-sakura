@@ -9,6 +9,7 @@ import Matchaside from "../components/Matchaside.astro";
 <Header />
 
 <body>
+    <h1>Matcha</h1>
     <Matchaside />
 </body>
 
@@ -19,4 +20,19 @@ import Matchaside from "../components/Matchaside.astro";
     body{
         background-color: var(--Semantik-Baggrund-Beige);
     }
+
+    h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: "didotltstd-roman";
+  }
+
+  @media (max-width: 820px){
+    h1{
+      font-size: 40px;
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+  }
 </style>
