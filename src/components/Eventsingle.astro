@@ -1,6 +1,6 @@
 <div class="hero">
-  <img class="img" src="../public/eventbilleder/hero.jpg" alt="" />
   <h1>Martiny Matcha Event</h1>
+  <img class="img" src="../public/eventbilleder/hero.jpg" alt="" />
 </div>
 <section class="event">
   <div>
@@ -53,6 +53,7 @@
 </section>
 
 <style>
+  /* mobile first */
   .pris {
     padding: 10%;
     text-align: right;
@@ -69,7 +70,7 @@
   }
   .event {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-inline: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -82,21 +83,19 @@
     margin-right: 10%;
   }
   .list {
-    margin-inline: 2%;
+    margin-inline: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
   h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
     color: var(--Semantik-Text-brødtekst-White);
   }
 
   img {
     width: 100%;
-    height: 600px;
   }
   .img1 {
     width: 100%;
@@ -104,7 +103,7 @@
   }
   .img2 {
     width: 100%;
-    height: 90%;
+
     border-radius: 10%;
   }
 
@@ -113,12 +112,77 @@
     padding: 12px;
     background-color: var(--Semantik-Knap-Red);
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    width: 20%;
+    width: 30%;
     color: var(--Semantik-Text-Knaptext-White);
   }
 
   @media (min-width: 1000px) {
+    .pris {
+      padding: 10%;
+      text-align: right;
+    }
+    html {
+      background-color: var(--Semantik-Baggrund-Beige);
+    }
+
+    p,
+    li {
+      font-size: 20px;
+      padding-top: 25px;
+      padding-left: 10px;
+    }
+    .event {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-inline: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .første {
+      margin-left: 10%;
+    }
+
+    .anden {
+      margin-right: 10%;
+    }
+    .list {
+      margin-inline: 2%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--Semantik-Text-brødtekst-White);
+    }
+
+    img {
+      width: 100%;
+      height: 600px;
+    }
+    .img1 {
+      width: 100%;
+      border-radius: 10%;
+    }
+    .img2 {
+      width: 100%;
+      height: 90%;
+      border-radius: 10%;
+    }
+
+    button {
+      border: none;
+      padding: 12px;
+      background-color: var(--Semantik-Knap-Red);
+      font-size: 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 20%;
+      color: var(--Semantik-Text-Knaptext-White);
+    }
   }
 </style>
