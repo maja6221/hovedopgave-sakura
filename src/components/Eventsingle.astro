@@ -1,28 +1,33 @@
-<div class="hero">
-  <h1>Martiny Matcha Event</h1>
-  <img class="img" src="../public/eventbilleder/hero.jpg" alt="" />
-</div>
 <section class="event">
-  <div>
-    <img class="img2" src="../public/eventbilleder/single.jpg" alt="" />
+  <div class="img2">
+    <img src="../public/eventbilleder/single.jpg" alt="" />
   </div>
-  <div class="første">
-    <h3>Deltag i Matcha event</h3>
-    <p>
-      Matcha består af helt fintmalede grønne teblade og indeholder alle de
-      mange mineraler, antioxidanter og vitaminer, som grøn te er kendt for.
-      Mange drikker matcha som en erstatning for kaffe, imens de nyder den
-      karaktersitiske og komplekse smag. Noget matcha kan smage bittert. Men
-      hvis teen tilberedes på den helt rigtige måde, ved den rette temperatur,
-      vil teen smage fyldig, let sød og frisk.
-    </p>
-    <p>
-      I samarbejde med Martinis Matcha, afholder Sakura Copenhagen et matcha
-      event og workshop. Her har du mulighed for at lære mere om matcha, hvordan
-      det tilberedes og de sundhedsmæssige fordele det har.
-    </p>
-    <div class="pris">
-      <h4>pris: 250kr</h4>
+  <div class="event1">
+    <div class="første">
+      <h3>Deltag i Matcha event</h3>
+      <div class="hele tekst">
+        <div class="tekst1">
+          <p>
+            Matcha består af helt fintmalede grønne teblade og indeholder alle
+            de mange mineraler, antioxidanter og vitaminer, som grøn te er kendt
+            for. Mange drikker matcha som en erstatning for kaffe, imens de
+            nyder den karaktersitiske og komplekse smag. Noget matcha kan smage
+            bittert. Men hvis teen tilberedes på den helt rigtige måde, ved den
+            rette temperatur, vil teen smage fyldig, let sød og frisk.
+          </p>
+        </div>
+        <div class="tekst2">
+          <p>
+            I samarbejde med Martinis Matcha, afholder Sakura Copenhagen et
+            matcha event og workshop. Her har du mulighed for at lære mere om
+            matcha, hvordan det tilberedes og de sundhedsmæssige fordele det
+            har.
+          </p>
+        </div>
+      </div>
+      <div class="pris">
+        <h4>pris: 250kr</h4>
+      </div>
     </div>
   </div>
 </section>
@@ -54,6 +59,21 @@
 
 <style>
   /* mobile first */
+
+  /* .event {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .event1 {
+    grid-row: 2 / 2;
+  }
+
+  .img2 {
+    grid-row: 1 / 2;
+  } */
+
   .pris {
     padding: 10%;
     text-align: right;
@@ -88,14 +108,21 @@
     margin-bottom: 5%;
   }
   h1 {
-    /* position: absolute; */
+    /* /* position: absolute; */
     text-align: center;
     font-size: 50px;
+    color: var(--Semantik-Text-brødtekst-White); */
+    position: absolute;
+    font-size: 30px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--Semantik-Text-brødtekst-White);
   }
 
   img {
     width: 100%;
+    height: auto;
   }
   .img1 {
     width: 100%;
@@ -103,7 +130,6 @@
   }
   .img2 {
     width: 100%;
-
     border-radius: 10%;
   }
 
@@ -116,6 +142,12 @@
     cursor: pointer;
     width: 30%;
     color: var(--Semantik-Text-Knaptext-White);
+    margin: 5%;
+  }
+
+  button:hover {
+    background-color: var(--Semantik-Knap-Red);
+    color: var(--Semantik-Text-Knaptext-Black);
   }
 
   @media (min-width: 1000px) {
@@ -154,7 +186,7 @@
     }
     h1 {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: var(--Semantik-Text-brødtekst-White);
@@ -162,7 +194,7 @@
 
     img {
       width: 100%;
-      height: 600px;
+      height: auto;
     }
     .img1 {
       width: 100%;
@@ -183,6 +215,11 @@
       cursor: pointer;
       width: 20%;
       color: var(--Semantik-Text-Knaptext-White);
+    }
+
+    button:hover {
+      background-color: var(--Semantik-Text-Knaptext-White);
+      color: var(--Semantik-Text---Semantik-Text-Knaptext-red);
     }
   }
 </style>
