@@ -116,7 +116,7 @@ const { shop } = Astro.props;
     width: 200px;
     border: none;
     background-color: var(--Semantik-Knap-Red);
-    font-family: "avenirnextltpro-bold";
+    font-family: "avenirnext-regular";
     border-radius: 50px;
     color: var(--Semantik-Text-Knaptext-White);
     cursor: pointer;
@@ -125,11 +125,15 @@ const { shop } = Astro.props;
     margin-left: 2%;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: solid;
+    border-color: var(--Semantik-Knap-Red);
   }
 
   button:hover {
-    background-color: #D3BCB0;
-    color: black;
+    background-color: var(--Semantik-Baggrund-Beige);
+    color: var(--Semantik-Text-Knaptext-red);
+    border-color: var(--Semantik-Knap-Red);
+    border: solid;
   }
 
   /* tablet version*/
@@ -214,15 +218,13 @@ const { shop } = Astro.props;
       cursor: pointer;
       font-size: 15px;
       width: 200px;
-      border: none;
+      border: solid;
+    border-color: var(--Semantik-Knap-Red);
       /* margin-top: 20px;
       padding-top: 20px;
       padding-bottom: 20px; */
     }
 
-    button:hover {
-      background-color: #D3BCB0;
-      color: black;
-    }
+   
   }
 </style>
