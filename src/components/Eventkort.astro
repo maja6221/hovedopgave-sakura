@@ -22,7 +22,10 @@
   <img class="img3" src="../public/eventbilleder/matcha.png" alt="" />
   <div>
     <h3>Martiny Matcha event</h3>
-    <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
+  
+      <p> <span id="lokation"> Lokation: </span> Gammel Kongevej 91, Sakura Copenhagen</p>
+  
+    
     <div class="knap">
       <a href="event_single"><button>LÆS MERE</button></a>
     </div>
@@ -33,7 +36,7 @@
   <img class="img3" src="../public/eventbilleder/kintsugi.png" alt="" />
   <div>
     <h3>Kintsugi event</h3>
-    <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
+    <p>Lokation: Gammel Kongevej 91, Sakura Copenhagen</p>
     <div class="knap">
       <button>LÆS MERE</button>
     </div>
@@ -42,8 +45,8 @@
 <div class="event3">
   <img class="img3" src="../public/eventbilleder/origami.png" alt="" />
   <div>
-    <h3>Orifami event</h3>
-    <h5>Lokation: Gammel Kongevej 91, Sakura Copenhagen</h5>
+    <h3>Origami event</h3>
+    <p>Lokation: Gammel Kongevej 91, Sakura Copenhagen</p>
     <div class="knap">
       <button>LÆS MERE</button>
     </div>
@@ -53,6 +56,12 @@
 
 <style>
   /* mobilefirst version */
+
+
+
+  #lokation {
+    font-weight: bold;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -67,6 +76,7 @@
   .divimg {
     order: -1;
   }
+
 
   .grid1 {
     display: grid;
@@ -110,16 +120,18 @@
   }
 
   .overskrift_events {
-    font-family: "commuters-sans", sans-serif;
+    font-family: "didotltstd-roman";
     font-size: 23px;
     padding-bottom: 30px;
   }
 
   p {
-    font-family: "Raleway", sans-serif;
+    font-family: "avenirnext-regular";
     line-height: 1.5em;
     font-size: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 23px;
+    padding-left: 10px;
+    text-align: left;
   }
 
   h3 {
@@ -128,11 +140,11 @@
     text-align: left;
   }
 
-  h5 {
+  /* h5 {
     padding-bottom: 23px;
     padding-left: 10px;
     text-align: left;
-  }
+  } */
   .knap {
     padding: 10%;
     text-align: right;
@@ -178,12 +190,22 @@
       text-align: left;
     }
 
-    h5 {
+    p {
+    font-family: "avenirnext-regular";
+    line-height: 1.5em;
+    font-size: 15px;
+    padding-bottom: 23px;
+    padding-left: 27px;
+    text-align: left;
+  }
+
+
+    /* h5 {
       padding-bottom: 23px;
       padding-top: 15px;
       text-align: left;
       padding-left: 27px;
-    }
+    } */
 
     .img1 {
       width: 70%;
