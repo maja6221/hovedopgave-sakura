@@ -96,7 +96,7 @@ const { matchasaet } = Astro.props;
     line-height: 1.5em;
     font-size: 15px;
     padding-top: 20px;
-    padding-bottom: 24px;
+    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -117,9 +117,16 @@ const { matchasaet } = Astro.props;
     padding-bottom: 20px;
   }
 
-  button:hover {
+  /* button:hover {
     background-color: #D3BCB0;
-    color: black;
+    color: var();
+  } */
+
+  button:hover {
+    background-color: var(--Semantik-Baggrund-Beige);
+    color: var(--Semantik-Text-Knaptext-red);
+    border-color: var(--Semantik-Knap-Red);
+    border: solid;
   }
 
   body {
@@ -205,10 +212,13 @@ const { matchasaet } = Astro.props;
       padding-bottom: 20px; */
     }
 
-    button:hover {
-      background-color: #D3BCB0;
-      color: black;
-    }
+
+  button:hover {
+    background-color: var(--Semantik-Baggrund-Beige);
+    color: var(--Semantik-Text-Knaptext-red);
+    border-color: var(--Semantik-Knap-Red);
+    border: solid;
   }
+}
 
 </style>
