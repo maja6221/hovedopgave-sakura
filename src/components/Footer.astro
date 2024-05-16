@@ -21,6 +21,12 @@
         <p>E-mail: hello@sakuracph.dk</p>
         <p>Telefon: 31 36 41 91</p>
         <p>Besøg vores butik: Gammel Kongevej 91, 1850 Frederiksberg C</p>
+        <div class="icons">
+          <a href="https://www.instagram.com/sakura_copenhagen/"> <img class="ikon" src="/images/instagram.webp" alt="instagram"></a>
+          <a href="https://www.facebook.com/sakuracopenhagen"><img class="ikon" src="/images/facebook.webp" alt="facebook"></a>
+          <a href="mailto:hello@sakura.dk"> <img class="ikon" src="/images/email.webp" alt=""></a>
+         
+        </div>
       </div>
       <div class="boks4">
         <h3 class="nyhedsbrev">Nyhedsbrev</h3>
@@ -37,6 +43,17 @@
   </footer>
   
   <style>
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      padding-top: 30px;
+    }
+
+    .ikon {
+      width: 50%;
+    }
+
 
     /* desktop version */
     .nyhedsbrev{
@@ -158,6 +175,10 @@
 
     /* mobil version */
     @media (max-width: 820px) {
+
+      .icons {
+        width: 50%;
+      }
       .footer_alt {
         display: grid;
         grid-template-columns: 1fr;
