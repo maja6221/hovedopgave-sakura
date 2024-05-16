@@ -1,25 +1,27 @@
-<div class="grid">
+<!-- <div class="grid"> -->
   <div class="div1">
-    <p>
+    <div>
+    <h2>Kommende events</h2>
+    <p class="p1">
       Året igennem afholder Viktoria Ceramic Studio forskellige events og
       workshops. Vi deltager også på forskellige internationale udstillinger og
-      messer, hvor vi sælger vores ting direkte til de besøgende.
+      messer, hvor vi sælger vores ting direkte til de besøgende. 
     </p>
-    <p>
+    <p class="p1">
       Vi har blandt andet set stor interesse i vores årlige julemarkeder, som vi
       afholder en gang om året. Her kan du finde 2. sorterings salg af keramik,
       skitser og udgåede varer. Her er det muligt at finde en unik keramisk gave
       eller forkæle dig selv med dansk håndlavet design til gode priser. Vi har
       blandt andet set stor interesse i vores årlige julemarkeder, som vi
-      afholder en gang om året. Her kan du finde 2. sorterings salg af keramik,
-      skitser og udgåede varer. Her er det muligt at finde en unik keramisk gave
-      eller forkæle dig selv med dansk håndlavet design til gode priser.
+      afholder en gang om året.
     </p>
   </div>
-</div>
+    <img class="img1" src="/eventbilleder/butik_5356.webp" alt="" />
+  </div>
+<!-- </div> -->
 <!-- <div class="grid1"> -->
 <div class="event1">
-  <img class="img3" src="../public/eventbilleder/matcha.png" alt="" />
+  <img class="img3" src="/eventbilleder/matcha.png" alt="" />
   <div>
     <h3>Martiny Matcha event</h3>
   
@@ -33,7 +35,7 @@
 </div>
 
 <div class="event2">
-  <img class="img3" src="../public/eventbilleder/kintsugi.png" alt="" />
+  <img class="img3" src="/eventbilleder/kintsugi.png" alt="" />
   <div>
     <h3>Kintsugi event</h3>
     <p>Lokation: Gammel Kongevej 91, Sakura Copenhagen</p>
@@ -43,7 +45,7 @@
   </div>
 </div>
 <div class="event3">
-  <img class="img3" src="../public/eventbilleder/origami.png" alt="" />
+  <img class="img3" src="/eventbilleder/origami.png" alt="" />
   <div>
     <h3>Origami event</h3>
     <p>Lokation: Gammel Kongevej 91, Sakura Copenhagen</p>
@@ -57,8 +59,12 @@
 <style>
   /* mobilefirst version */
 
-
-
+  .img1{
+      width: 90%;
+      height: auto;
+      border-radius: 30px;
+      margin: 5%;
+    }
   #lokation {
     font-weight: bold;
   }
@@ -67,7 +73,7 @@
     grid-template-columns: 1fr;
   }
 
-  .div1 {
+  /* .div1 {
     margin-inline: 15%;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -75,8 +81,7 @@
 
   .divimg {
     order: -1;
-  }
-
+  } */
 
   .grid1 {
     display: grid;
@@ -88,7 +93,7 @@
     grid-template-columns: 1fr;
     margin: 5%;
     background-color: var(--Primitives-Farver-Brun-06);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 30px;
   }
 
   .event2 {
@@ -96,7 +101,7 @@
     grid-template-columns: 1fr;
     margin: 5%;
     background-color: var(--Primitives-Farver-Brun-06);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 30px;
   }
 
   .event3 {
@@ -104,7 +109,7 @@
     grid-template-columns: 1fr;
     margin: 5%;
     background-color: var(--Primitives-Farver-Brun-06);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 30px;
   }
 
   /* .img1 {
@@ -116,7 +121,7 @@
 
   .img3 {
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 30px;
   }
 
   .overskrift_events {
@@ -130,14 +135,28 @@
     line-height: 1.5em;
     font-size: 15px;
     padding-bottom: 23px;
-    padding-left: 10px;
+    padding-left: 15px;
     text-align: left;
   }
 
+  .p1{
+    font-size: 15px;
+  }
+
+  h2{
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
   h3 {
-    padding-bottom: 27px;
-    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     text-align: left;
+    font-family: "didotltstd-roman";
+    font-size: 20px;
+    padding-top: 20px;
   }
 
   /* h5 {
@@ -146,29 +165,43 @@
     text-align: left;
   } */
   .knap {
-    padding: 10%;
-    text-align: right;
+    padding-left: 12px;
+    padding-bottom: 20px;
   }
   button {
     border: none;
     padding: 12px;
     background-color: var(--Semantik-Knap-Red);
     color: var(--Semantik-Text-Knaptext-White);
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 20px;
     width: 40%;
-  }
+    font-family: "avenirnext-regular";
+    cursor: pointer;
+    border-style: solid;
+    border: none;
+  }  
+    button:hover {
+      background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
+    }
 
-  button:hover {
-    background-color: var(--Semantik-Knap-Red);
-    color: var(--Semantik-Text-Knaptext-Black);
-  }
+    .div1{
+      padding-bottom: 25px;
+    }
 
   /* desktop version */
   @media (min-width: 1000px) {
+
+    .img1{
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
     .grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       background-color: var(--Semantik-Baggrund-Beige);
     }
 
@@ -180,25 +213,51 @@
       text-align: center;
     }
     .div1 {
-      margin-inline: 15%;
-      margin-top: 20%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      /* top, right, bottom, left */
+      padding:50px 125px 10px 92px;
+      margin: 0;
     }
+
+    h2{
+      font-size: 50px;
+      font-family: "didotltstd-roman";
+      padding-top: 40px;
+      padding-bottom: 35px;
+      padding-left: 28px;
+    }
+
     h3 {
-      padding-top: 5%;
+      padding-top: 50px;
       padding-bottom: 27px;
       padding-left: 27px;
       text-align: left;
+      font-size: 30px;
     }
+
+
 
     p {
     font-family: "avenirnext-regular";
     line-height: 1.5em;
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 23px;
     padding-left: 27px;
     text-align: left;
   }
 
+  .p1{
+    font-size: 15px;
+    line-height: 1.8em;
+        padding-bottom: 20px;
+  }
+
+  .knap {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
 
     /* h5 {
       padding-bottom: 23px;
@@ -207,10 +266,6 @@
       padding-left: 27px;
     } */
 
-    .img1 {
-      width: 70%;
-    }
-
     .divimg {
       order: 1;
       margin-top: 5%;
@@ -218,30 +273,33 @@
 
     .img3 {
       width: 100%;
-      height: 100%;
-      border-radius: 10px 0px 0px 10px;
+      height: auto%;
+      border-radius: 30px;
     }
 
     .event1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 5%;
       background-color: var(--Primitives-Farver-Brun-06);
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 30px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
     .event2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 5%;
       background-color: var(--Primitives-Farver-Brun-06);
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 30px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
     .event3 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 5%;
       background-color: var(--Primitives-Farver-Brun-06);
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 30px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
 
     button {
@@ -252,17 +310,17 @@
       font-size: 15px;
       border-radius: 40px;
       width: 50%;
+      cursor: pointer;
+      border-style: solid;
+      border: none;
     }
 
     button:hover {
       background-color: var(--Semantik-Baggrund-Beige);
-      color: black;
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
     }
+  
 
-    .div1 {
-      margin-inline: 15%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
   }
 </style>
