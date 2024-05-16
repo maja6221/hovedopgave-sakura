@@ -49,10 +49,6 @@ const { matchasaet } = Astro.props;
     </div>
 </section>
 
-<div class="andre_saet">
-    <h2>Se andre matcha sæt her</h2>  
-</div>
-
 
 
 <Footer />
@@ -63,9 +59,8 @@ const { matchasaet } = Astro.props;
   .grid_singleview {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 50px;
-      padding-left: 10px;
-      padding-right: 10px;
+    /* top, right, bottom, left */
+    padding: 50px 10px 30px 10px;
   }
   .billede {
     width: 100%;
@@ -214,12 +209,6 @@ const { matchasaet } = Astro.props;
       background-color: #D3BCB0;
       color: black;
     }
-  }
-
-  .andre_saet{
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
   }
 
 </style>
