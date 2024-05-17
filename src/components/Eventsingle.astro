@@ -1,8 +1,7 @@
 ---
 import "../style/mutual.css";
 ---
-<section class="event">
-  <!-- <div class="event1"> -->
+<section class="event1">
   <div class="første">
     <div class="overskift1">
       <h3>Deltag i Matcha event</h3>
@@ -34,38 +33,38 @@ import "../style/mutual.css";
     </div>
   </div>
   <div class="img2">
-    <img src="../public/eventbilleder/matchaevent.png" alt="" />
+    <img src="/eventbilleder/matchaevent.png" alt="" />
   </div>
 </section>
 
-<section class="event">
+<section class="event2">
   <div>
-    <img class="img2" src="../public/eventbilleder/matchaevent4.png" alt="" />
+    <img class="img2" src="/eventbilleder/matchaevent4.png" alt="" />
   </div>
   <div class="anden">
     <div class="overskrift2">
-      <h3>Ved Køb af Matcha event får du:</h3>
+      <h3>Ved køb af Matcha event får du:</h3>
     </div>
     <div class="liste">
       <div class="boks_1">
-        <h2>1.</h2>
-        <p>1 stk Martiny’s Matcha pulver til en værdi af 189 kr</p>
+        <h4>1.</h4>
+        <p>1 stk Martiny’s Matcha pulver til en værdi af 189 kr.</p>
       </div>
       <div class="boks_2">
-        <h2>2.</h2>
-        <p>Information omkring matcha teens historie</p>
+        <h4>2.</h4>
+        <p>Information omkring matcha teens historie.</p>
       </div>
       <div class="boks_3">
-        <h2>3.</h2>
-        <p>Undervisning i at lave den perfekte matcha te eller latte</p>
+        <h4>3.</h4>
+        <p>Undervisning i at lave den perfekte matcha te eller latte.</p>
       </div>
       <div class="boks_4">
-        <h2>4.</h2>
-        <p>Undervisning i at lave den perfekte matcha te eller latte</p>
+        <h4>4.</h4>
+        <p>Undervisning i at lave den perfekte matcha te eller latte.</p>
       </div>
       <div class="boks_5">
-        <h2>5.</h2>
-        <p>15% på alle matcha produkter i butikken</p>
+        <h4>5.</h4>
+        <p>15% på alle matcha produkter i butikken.</p>
       </div>
     </div>
   </div>
@@ -73,6 +72,10 @@ import "../style/mutual.css";
 
 <style>
   /* mobile first */
+
+  h3{
+    font-size: 20px;
+  }
 
   .pris {
     display: grid;
@@ -93,7 +96,7 @@ import "../style/mutual.css";
     padding: 20px 10px 10px 10px;
   }
   p {
-    font-size: 15px;
+    font-size: 13px;
     /* padding-top: 25px;
     padding-left: 10px; */
     font-family: "avenirnext-regular";
@@ -107,15 +110,23 @@ import "../style/mutual.css";
     margin-bottom: 5%;
   } */
 
-  .event {
+  .event1 {
     display: grid;
     grid-template-columns: 1fr;
     margin-inline: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
+  .event2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   .første {
-    margin-left: 10%;
+    margin-left: 0%;
   }
 
   .anden {
@@ -126,22 +137,11 @@ import "../style/mutual.css";
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  h1 {
-    /* /* position: absolute; */
-    text-align: center;
-    font-size: 50px;
-    color: var(--Semantik-Text-brødtekst-White);
-    /* position: absolute; */
-    font-size: 30px;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--Semantik-Text-brødtekst-White);
-  }
 
   img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
   }
   .img1 {
     width: 100%;
@@ -164,9 +164,15 @@ import "../style/mutual.css";
     margin: 5%;
   }
 
+  .overskift1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .overskrift2 {
     margin-left: 7%;
     margin-top: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   button:hover {
@@ -174,26 +180,32 @@ import "../style/mutual.css";
     color: var(--Semantik-Text---Semantik-Text-Knaptext-red);
   }
 
-  h2 {
+  h4 {
     margin-inline: 5%;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--Semantik-Text-Knaptext-Green);
   }
 
+  /* desktop version */
   @media (min-width: 1000px) {
+
+    .beløb{
+      margin-left: 20%;
+    }
     span {
       font-weight: bold;
     }
 
     p {
-      font-size: 20px;
+      font-size: 15px;
       padding-left: 10px;
       font-family: "avenirnext-regular";
+      padding-top: 10px;
     }
 
-    h2 {
+    h4 {
       margin-inline: 5%;
-      font-size: 40px;
+      font-size: 30px;
       color: var(--Semantik-Text-Knaptext-Green);
     }
     .boks_1,
@@ -216,13 +228,21 @@ import "../style/mutual.css";
       background-color: var(--Semantik-Baggrund-Beige);
     }
 
-    .event {
+    .event1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-inline: 10%;
-      margin-top: 5%;
-      margin-bottom: 5%;
+      padding-top: 50px;
+      gap: 50px;
     }
+
+    .event2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-inline: 10%;
+      padding-top: 50px;
+    }
+
     /* .første {
       margin-left: 10%;
     } */
@@ -240,6 +260,7 @@ import "../style/mutual.css";
       margin-inline: 5%;
       margin-left: -10%;
       padding-top: 25px;
+      padding-top: 10px;
       /* margin-top: %;
       margin-bottom: 5%; */
     }
@@ -247,6 +268,7 @@ import "../style/mutual.css";
     .overskift1 {
       /* margin-inline: 5%; */
       margin-left: -8%;
+      padding-top: 40px;
     }
 
     .overskrift2 {
@@ -263,21 +285,22 @@ import "../style/mutual.css";
 
     h3 {
       font-family: "didotltstd-roman";
+      font-size: 30px;
     }
 
     .img1 {
       width: 100%;
-      border-radius: 10%;
+      border-radius: 30px;
     }
     .img2 {
-      width: 100%;
-
-      border-radius: 10%;
+      width: 90%;
+      border-radius: 30px;
+      margin-top: 30px;
     }
     img {
       width: 100%;
       height: auto;
-      border-radius: 10%;
+      border-radius: 30px;
     }
 
     button {
