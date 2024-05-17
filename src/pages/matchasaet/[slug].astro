@@ -45,6 +45,9 @@ const { matchasaet } = Astro.props;
     <div class="tekst">
       <p>{matchasaet.tekst}</p>
     </div>
+    <div>
+      <p class="plus">- 1 +</p>
+    </div>
     <button>TILFØJ TIL KURV</button>
     </div>
 </section>
@@ -55,12 +58,25 @@ const { matchasaet } = Astro.props;
 
 <style>
   /* mobilefirst version*/
-
   .grid_singleview {
     display: grid;
     grid-template-columns: 1fr;
     /* top, right, bottom, left */
-    padding: 50px 10px 30px 10px;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .plus {
+    font-family: "avenirnext-regular";
+    font-size: 15px;
+    margin-left: 3%;
+    border-style: solid;
+    border-color: var(--Primitives-Farver-Hvid-sort-09);
+    width: 40%;
+    letter-spacing: 12px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
   }
   .billede {
     width: 100%;
@@ -96,7 +112,7 @@ const { matchasaet } = Astro.props;
     line-height: 1.5em;
     font-size: 15px;
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -106,13 +122,13 @@ const { matchasaet } = Astro.props;
     width: 200px;
     border: none;
     background-color: var(--Semantik-Knap-Red);
-    font-family: "avenirnextltpro-bold";
+    font-family: "avenirnext-regular";
     border-radius: 50px;
     color: var(--Semantik-Text-Knaptext-White);
     cursor: pointer;
     /* padding: 10px; */
-    margin-top: 15px;
-    margin-left: 2%;
+    margin-top: 25px;
+    margin-left: 1%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -135,7 +151,18 @@ const { matchasaet } = Astro.props;
 
   /* tablet version*/
   @media (min-width: 820px) {
-
+    .plus {
+      font-family: "avenirnext-regular";
+      font-size: 20px;
+      margin-left: 9%;
+      border-style: solid;
+      border-color: var(--Primitives-Farver-Hvid-sort-09);
+      width: 15%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
     /* .overskrift {
       margin-left: 4%;
     }
@@ -164,36 +191,53 @@ const { matchasaet } = Astro.props;
       grid-template-columns: 1fr 1fr;
       /* top, rigth, bottom, left */
       padding: 50px 0px 70px 35px;
-      gap: 35px;
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+
+
+    .plus {
+      font-family: "avenirnext-regular";
+      font-size: 15px;
+      border-style: solid;
+      border-color: var(--Primitives-Farver-Hvid-sort-09);
+      width: 25%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-left: 2%;
     }
 
     .billede {
-      width: 100%;
+      width: 90%;
       height: auto;
-    border-radius: 30px;
+      border-radius: 30px;
+      margin-top: 20px;
+      margin-left: 3%;
     }
 
     .overskrift {
       font-family:  "didotltstd-roman";
-      font-size: 50px;
+      font-size: 40px;
     }
 
     .kategori {
       font-family:  "didotltstd-roman";
-      font-size: 30px;
+      font-size: 25px;
       padding-top: 22px;
       
     }
     .pris {
       font-family: "didotltstd-roman";
-      font-size: 30px;
+      font-size: 20px;
       padding-top: 18px;
     }
 
     .tekst {
       font-family: "avenirnext-regular";
       line-height: 1.5em;
-      font-size: 20px;
+      font-size: 15px;
       padding-top: 20px;
       padding-bottom: 24px;
     }
@@ -210,9 +254,11 @@ const { matchasaet } = Astro.props;
       /* margin-top: 20px;
       padding-top: 20px;
       padding-bottom: 20px; */
+      margin-top: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 1%;
     }
-
-
   button:hover {
     background-color: var(--Semantik-Baggrund-Beige);
     color: var(--Semantik-Text-Knaptext-red);
