@@ -24,7 +24,10 @@
       </div>
     </div>
     <div class="pris">
-      <p><span>pris:</span> 250kr</p>
+      <div class="beløb">
+        <p><span>pris:</span> 250kr</p>
+      </div>
+      <center><button> Tilføj til kurv</button></center>
     </div>
   </div>
   <div class="img2">
@@ -65,14 +68,12 @@
   </div>
 </section>
 
-<section>
-  <center><button> Tilføj til kurv</button></center>
-</section>
-
 <style>
   /* mobile first */
 
   .pris {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 10%;
     text-align: right;
   }
@@ -150,12 +151,12 @@
 
   button {
     border: none;
-    padding: 12px;
+    padding: 10px;
     background-color: var(--Semantik-Knap-Red);
     font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
-    width: 30%;
+    width: 90%;
     color: var(--Semantik-Text-Knaptext-White);
     margin: 5%;
   }
@@ -166,8 +167,8 @@
   }
 
   button:hover {
-    background-color: var(--Semantik-Knap-Red);
-    color: var(--Semantik-Text-Knaptext-Black);
+    background-color: var(--Semantik-Text-Knaptext-White);
+    color: var(--Semantik-Text---Semantik-Text-Knaptext-red);
   }
 
   h2 {
@@ -183,7 +184,6 @@
 
     p {
       font-size: 20px;
-
       padding-left: 10px;
       font-family: "avenirnext-regular";
     }
@@ -202,9 +202,12 @@
       gap: 10px;
       padding: 20px 10px 10px 10px;
     }
+
     .pris {
-      padding: 10%;
-      text-align: right;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* padding: 10%; */
+      text-align: left;
     }
     html {
       background-color: var(--Semantik-Baggrund-Beige);
@@ -275,13 +278,14 @@
     }
 
     button {
+      justify-content: left;
       border: none;
-      padding: 12px;
+      padding: 10px;
       background-color: var(--Semantik-Knap-Red);
       font-size: 15px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       cursor: pointer;
-      width: 20%;
+      width: 100%;
       color: var(--Semantik-Text-Knaptext-White);
     }
 
