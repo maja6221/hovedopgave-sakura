@@ -41,12 +41,28 @@ const { shop } = Astro.props;
     <img src={shop.image} alt="" />
     <h2 class="overskrift">{shop.overskrift}</h2>
     <h3 class="kategori">{shop.kategori}</h3>
-    <h4 class="pris">{shop.pris} DKK</h4>
+    <h4 class="pris">{shop.pris} </h4>
     <div class="tekst">
       <p>{shop.tekst}</p>
     </div>
+    <div>
+      <p class="plus">- 1 +</p>
+    </div>
     <button>TILFØJ TIL KURV</button>
+
+<div class="semere">
+  <hr>
+  <div class="col">
+    <p>Detaljer om varen</p>
+    <p>+</p>
   </div>
+  <hr>
+      <div class="col">
+    <p>Ofte stillede spørgsmål</p>
+    <p>+</p>
+  </div>
+  <hr>
+</div>
     
 </section>
 
@@ -58,6 +74,49 @@ const { shop } = Astro.props;
 <style>
   /* mobile version*/
 
+  .semere p{
+    font-family: "avenirnext-regular";
+    font-size: 15px;
+  }
+
+.semere {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-inline: 6%;
+  margin-left: 15px;
+}
+
+hr {
+  margin-inline: 4%;
+}
+
+
+.plus {
+  font-family: "avenirnext-regular";
+    font-size: 15px;
+    margin-left: 3%;
+    border-style: solid;
+    border-color: var(--Primitives-Farver-Hvid-sort-09);
+    width: 40%;
+    letter-spacing: 12px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  .grid_singleview {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
+
   body{
     background-color: var(--Semantik-Baggrund-Beige);
   }
@@ -65,12 +124,10 @@ const { shop } = Astro.props;
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 30px;
-    margin-left: 8%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 30px 10px 30px 10px
   }
   .billede {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 30px;
     /* margin-left: 8%; */
@@ -81,7 +138,6 @@ const { shop } = Astro.props;
     font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
     padding-bottom: 5px;
   }
 
@@ -106,7 +162,7 @@ const { shop } = Astro.props;
     line-height: 1.5em;
     font-size: 15px;
     padding-top: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -121,10 +177,10 @@ const { shop } = Astro.props;
     color: var(--Semantik-Text-Knaptext-White);
     cursor: pointer;
     /* padding: 10px; */
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 2%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: solid;
     border-color: var(--Semantik-Knap-Red);
   }
@@ -138,6 +194,19 @@ const { shop } = Astro.props;
 
   /* tablet version*/
   @media (min-width: 820px) {
+
+    .plus {
+      font-family: "avenirnext-regular";
+      font-size: 20px;
+      margin-left: 9%;
+      border-style: solid;
+      border-color: var(--Primitives-Farver-Hvid-sort-09);
+      width: 15%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
 
     .overskrift {
       margin-left: 4%;
@@ -162,24 +231,55 @@ const { shop } = Astro.props;
     button {
       margin-left: 4%;
     }
-
   
   }
 
   /* desktop version*/
   @media (min-width: 1000px) {
     .grid_singleview {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding:50px 50px 70px 0px;
-      margin-right: 8%;
-      gap: 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 75px 70px 0px;
+        margin-left: 7%;
     }
-.billede {
-      width: 80%;
+
+    .col {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 50%;
+    margin-left: 4%;
+  }
+
+  .semere {
+    padding-top: 130px;
+    margin-left: 2%;
+  }
+
+  hr {
+    margin-right: 50%;
+    margin-left: 4%;
+    }
+
+  .plus {
+      font-family: "avenirnext-regular";
+      font-size: 15px;
+      border-style: solid;
+      border-color: var(--Primitives-Farver-Hvid-sort-09);
+      width: 25%;
+      letter-spacing: 12px;
+      padding-left: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-left: 6%;
+    }
+    .billede {
+      width: 90%;
       height: auto;
-    border-radius: 30px;
-    margin-left:20% ;
+      border-radius: 30px;
+      margin-left: 9%;
+      margin-top: 20px;
     }
 
     .overskrift {
@@ -191,23 +291,24 @@ const { shop } = Astro.props;
     .kategori {
       font-family:  "didotltstd-roman";
       font-size: 25px;
-      padding-top: 22px;
+      padding-top: 15px;
       
     }
 
     .pris {
       font-family: "didotltstd-roman";
-      font-size: 25px;
+      font-size: 20px;
       padding-top: 18px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
 
     .tekst {
       font-family: "avenirnext-regular";
       line-height: 1.5em;
-      font-size: 20px;
-      padding-top: 20px;
-      padding-bottom: 24px;
+      font-size: 15px;
+      padding-top: 5px;
+      padding-bottom: 28px;
+      margin-right: 36px;
     }
 
     button {
@@ -219,12 +320,38 @@ const { shop } = Astro.props;
       font-size: 15px;
       width: 200px;
       border: solid;
-    border-color: var(--Semantik-Knap-Red);
-      /* margin-top: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px; */
+      border-color: var(--Semantik-Knap-Red);
+      margin-top: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 5%;
+    }
+  }
+
+  @media (min-width:1900px){
+    .overskrift{
+      font-size: 45px;
+    }
+    .tekst{
+      font-size: 20px;
     }
 
-   
+    .kategori{
+      font-size: 35px;
+    }
+
+    .pris{
+      font-size: 30px;
+    }
+
+    .plus{
+      font-size: 20px;
+      width: 22%;
+    }
+
+    button{
+      font-size: 20px;
+      width: 220px;
+    }
   }
 </style>

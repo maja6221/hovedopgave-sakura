@@ -1,3 +1,6 @@
+---
+import "../style/mutual.css";
+---
 <!-- <div class="grid"> -->
   <div class="div1">
     <div>
@@ -303,6 +306,63 @@
       background-color: var(--Semantik-Baggrund-Brown);
       border-color: var(--Semantik-Knap-Red);
       color: var(--Semantik-Knap-Red);
+    }
+  }
+
+  @media (min-width:1900px){
+    .event1 {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--Primitives-Farver-Brun-06);
+        border-radius: 30px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+    .event2 {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--Primitives-Farver-Brun-06);
+        border-radius: 30px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+    .event3 {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--Primitives-Farver-Brun-06);
+        border-radius: 30px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .div1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 50px 70px 10px 130px;
+        margin: 0;
+    }
+
+    button{
+      width: 40%;
+    }
+
+    .p1{
+      font-size: 20px;
+    }
+
+    h2{
+      font-size: 60px;
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+
+    h3{
+      font-size: 40px;
+    }
+
+    p{
+      font-size: 25px;
     }
   }
 </style>

@@ -1,3 +1,6 @@
+---
+import "../style/mutual.css";
+---
 <section>
     <div class="grid"><a href="eventside"><button> Se alle events</button></a></div>
   </section>
@@ -65,6 +68,13 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+      }
+    }
+
+    @media (min-width: 1900px) {
+      button {
+        padding-inline: 100px;
+        font-size: 20px;
       }
     }
   </style>

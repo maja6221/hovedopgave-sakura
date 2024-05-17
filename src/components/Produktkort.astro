@@ -1,6 +1,7 @@
 ---
 const { image, kategori, data, tekst, overskrift, pris, link, aktiv } = Astro.props;
 console.log(data);
+import "../style/mutual.css";
 ---
 
 <a href={link}>
@@ -8,7 +9,7 @@ console.log(data);
     <img src={image} alt="image" />
     <div class="div1">
       <h3>{overskrift}</h3>
-      <h4>{kategori} | {pris} <span>DKK</span></h4>
+      <h4>{kategori} | {pris} </h4>
       <p></p>
       <button>SHOP NU</button>
     </div>
