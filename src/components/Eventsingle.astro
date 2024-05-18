@@ -19,7 +19,7 @@ import "../style/mutual.css";
       </div>
       <div class="tekst2">
         <p>
-          I samarbejde med Martinis Matcha, afholder Sakura Copenhagen et matcha
+          I samarbejde med Martinys Matcha, afholder Sakura Copenhagen et matcha
           event og workshop. Her har du mulighed for at lære mere om matcha,
           hvordan det tilberedes og de sundhedsmæssige fordele det har.
         </p>
@@ -27,7 +27,7 @@ import "../style/mutual.css";
     </div>
     <div class="pris">
       <div class="beløb">
-        <p><span>pris:</span> 250kr</p>
+        <p class="beløb_p"><span>pris:</span> 250kr</p>
       </div>
       <center><button> Tilføj til kurv</button></center>
     </div>
@@ -72,7 +72,6 @@ import "../style/mutual.css";
 
 <style>
   /* mobile first */
-
   h3{
     font-size: 20px;
   }
@@ -159,10 +158,18 @@ import "../style/mutual.css";
     font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
     color: var(--Semantik-Text-Knaptext-White);
     margin: 5%;
+    font-family: "avenirnext-regular";
   }
+
+  button:hover {
+      background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
+      border-style: solid;
+    }
 
   .overskift1{
     padding-top: 10px;
@@ -175,22 +182,32 @@ import "../style/mutual.css";
     padding-bottom: 10px;
   }
 
-  button:hover {
-    background-color: var(--Semantik-Text-Knaptext-White);
-    color: var(--Semantik-Text---Semantik-Text-Knaptext-red);
-  }
-
   h4 {
     margin-inline: 5%;
     font-size: 20px;
     color: var(--Semantik-Text-Knaptext-Green);
   }
 
+  .beløb_p{
+      font-size: 15px;
+      padding-top: 20px;
+    }
+
+    .beløb{
+      margin-left: -50%;
+      margin-right: 65%;
+    } 
+
   /* desktop version */
   @media (min-width: 1000px) {
 
     .beløb{
-      margin-left: 20%;
+      margin-left: -50%;
+    }
+
+    .beløb_p{
+      font-size: 20px;
+      padding-top: 20px;
     }
     span {
       font-weight: bold;
@@ -231,7 +248,7 @@ import "../style/mutual.css";
     .event1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-inline: 10%;
+      margin-inline: 15%;
       padding-top: 50px;
       gap: 50px;
     }
@@ -268,7 +285,7 @@ import "../style/mutual.css";
     .overskift1 {
       /* margin-inline: 5%; */
       margin-left: -8%;
-      padding-top: 40px;
+      padding-top: 25px;
     }
 
     .overskrift2 {
@@ -304,20 +321,24 @@ import "../style/mutual.css";
     }
 
     button {
-      justify-content: left;
-      border: none;
-      padding: 10px;
+      right: 40%;
+      padding: 15px;
       background-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Baggrund-Beige);
       font-size: 15px;
-      /* border-radius: 20px; */
-      cursor: pointer;
+      border-radius: 40px;
       width: 100%;
-      color: var(--Semantik-Text-Knaptext-White);
+      cursor: pointer;
+      border-style: solid;
+      border: none;
     }
 
     button:hover {
-      background-color: var(--Semantik-Text-Knaptext-White);
-      color: var(--Semantik-Text---Semantik-Text-Knaptext-red);
+      background-color: var(--Semantik-Baggrund-Beige);
+      border-color: var(--Semantik-Knap-Red);
+      color: var(--Semantik-Knap-Red);
+      border-style: solid;
     }
+
   }
 </style>
