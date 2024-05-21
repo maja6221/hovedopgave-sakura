@@ -1,68 +1,68 @@
 ---
 import "../style/mutual.css";
 import Guidelatte from "../components/Guidelatte.astro";
-import Header from "../components/Header.astro"
-import Guidelatte2 from "../components/Guidelatte2.astro"; 
+import Header from "../components/Header.astro";
+import Guidelatte2 from "../components/Guidelatte2.astro";
 import Footer from "../components/Footer.astro";
+import Matchalattev from "../components/Matchalattev.astro";
 ---
 
-<Header/>
+<Header />
 
 <body>
+  <h1>Guide til matcha latte</h1>
 
-<h1>Guide til matcha latte</h1>
+  <Guidelatte />
 
-<Guidelatte/>
+  <h2>Sådan laver du matcha latte:</h2>
+  <Guidelatte2 />
 
-<h2>Sådan laver du matcha latte:</h2>
-<Guidelatte2 />
+  <Matchalattev />
+</body>
 
-</body>   
-
-<Footer/>
+<Footer />
 
 <style>
-    /* desktop version */ 
+  /* desktop version */
 
-    body{
-        background-color: var(--Semantik-Baggrund-Beige);
+  body {
+    background-color: var(--Semantik-Baggrund-Beige);
+  }
+  h1 {
+    text-align: center;
+    gap: 10px;
+    padding: 60px 10px 0px 10px;
+    font-family: "didotltstd-roman";
+  }
+
+  h2 {
+    gap: 10px;
+    /* top right bottom left */
+    padding: 50px 0px 40px 98px;
+    font-family: "didotltstd-roman";
+  }
+
+  @media (max-width: 820px) {
+    /* mobil version */
+
+    /*ændre størrelsen på fonten til den rigtige */
+    h1 {
+      text-align: center;
+      gap: 10px;
+      /* padding: 50px 10px 0px 10px; */
+      font-size: 40px;
+      padding: 20px 18px 20px 18px;
+      font-family: "didotltstd-roman";
     }
-    h1{
-        text-align: center;
-        gap: 10px;
-        padding: 60px 10px 0px 10px;
-        font-family: "didotltstd-roman";
+
+    h2 {
+      gap: 10px;
+      padding-top: 40px;
+      padding-right: 18px;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-family: "didotltstd-roman";
     }
-
-    h2{
-        gap: 10px;
-        /* top right bottom left */
-        padding: 50px 0px 40px 98px;
-        font-family: "didotltstd-roman";
-    }
-
-    @media (max-width: 820px){
-            /* mobil version */ 
-
-       /*ændre størrelsen på fonten til den rigtige */
-     h1{
-        text-align: center;
-        gap: 10px;
-        /* padding: 50px 10px 0px 10px; */
-        font-size: 40px;
-        padding: 20px 18px 20px 18px;
-        font-family: "didotltstd-roman";
-    }
-
-    h2{
-        gap: 10px;
-        padding-top: 40px;
-        padding-right: 18px;
-        padding-left: 30px;
-        padding-bottom: 10px;
-        font-size: 30px;
-        font-family: "didotltstd-roman";
-    }
-    } 
-
+  }
 </style>
