@@ -1,0 +1,84 @@
+---
+import "../style/mutual.css";
+import Guidete from "../components/Guidete.astro";
+import Header from "../components/Header.astro";
+import Guidete2 from "../components/Guidete2.astro";
+import Footer from "../components/Footer.astro";
+import Matchatevideo from "../components/Matchatevideo.astro";
+---
+
+<Header />
+
+<body>
+  <h1>Guide til matcha te</h1>
+  <Guidete />
+
+  <h2>Sådan laver du matcha te:</h2>
+  <Guidete2 />
+  <Matchatevideo />
+</body>
+
+<Footer />
+
+<style>
+  /* ipad/tablet version */
+  /* @media (min-width: 820px) {
+
+    h1{
+        text-align: center;
+        gap: 10px;
+        padding: 50px 10px 0px 10px;
+    }
+
+    h2{
+        gap: 10px;
+        padding-top: 119px;
+        padding-right: 0px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+   } */
+
+  /* desktop version */
+
+  body {
+    background-color: var(--Semantik-Baggrund-Beige);
+  }
+  h1 {
+    text-align: center;
+    gap: 10px;
+    padding: 60px 10px 0px 10px;
+    font-family: "didotltstd-roman";
+  }
+
+  h2 {
+    gap: 10px;
+    /* top right bottom left */
+    padding: 50px 0px 40px 98px;
+    font-family: "didotltstd-roman";
+  }
+
+  @media (max-width: 820px) {
+    /* mobil version */
+
+    /*ændre størrelsen på fonten til den rigtige */
+    h1 {
+      text-align: center;
+      gap: 10px;
+      /* padding: 50px 10px 0px 10px; */
+      font-size: 40px;
+      padding: 20px 18px 20px 18px;
+      font-family: "didotltstd-roman";
+    }
+
+    h2 {
+      gap: 10px;
+      padding-top: 40px;
+      padding-right: 18px;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-family: "didotltstd-roman";
+    }
+  }
+</style>
