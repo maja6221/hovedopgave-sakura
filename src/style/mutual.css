@@ -15,6 +15,11 @@
   src: url("didotltstd-roman-webfont.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: avenir-next-bold;
+  src: url ("avenir-next-bold-webfont.woff2")
+}
+
 /* til desktop version */
 
 h1 {
