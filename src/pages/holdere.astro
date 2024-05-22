@@ -29,6 +29,12 @@ const Te = alleProdukter.filter((produkter) => produkter.kategori == "Te");
 
 <Header />
 
+<ul class="breadcrumb">
+  <li><a href="/shopalt">Shop</a></li>
+  <li><a href="/shop">Matcha produkter</a></li>
+  <li><a href="/holdere">Matcha holdere</a></li>
+</ul>
+
 <h1>Matcha holdere</h1>
 
 <Minimenu />
@@ -65,11 +71,53 @@ const Te = alleProdukter.filter((produkter) => produkter.kategori == "Te");
   background-color: var(--Semantik-Baggrund-Beige);
 }
 
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  padding-top: 30px;
+  margin-left: 13%;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  text-decoration: none;
+  font-family: "avenirnext-regular";
+  font-size: 15px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--Semantik-Knap-Red);
+  text-decoration: none;
+}
+
   @media (max-width: 820px){
     h1{
       font-size: 40px;
       padding-top: 25px;
       padding-bottom: 10px;
+    }
+
+    ul.breadcrumb {
+    margin-left: 2%;
+    }
+
+    ul.breadcrumb li a {
+    font-size: 12px;
     }
   }
   @media (min-width: 1000px) {

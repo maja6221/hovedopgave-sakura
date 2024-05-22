@@ -31,6 +31,11 @@ const { shop } = Astro.props;
 
 <Header />
 
+<ul class="breadcrumb">
+  <li><a href="/shopalt">Shop</a></li>
+  <li><a href="/shop">Matcha produkter</a></li>
+</ul>
+
 
 
 <section class="grid_singleview">
@@ -192,7 +197,43 @@ hr {
     border: solid;
   }
 
-  /* tablet version*/
+
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  padding-top: 30px;
+  margin-left: 11%;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  text-decoration: none;
+  font-family: "avenirnext-regular";
+  font-size: 15px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--Semantik-Knap-Red);
+  text-decoration: none;
+}
+
+
+  /* mobil version*/
   @media (min-width: 820px) {
 
     .plus {
