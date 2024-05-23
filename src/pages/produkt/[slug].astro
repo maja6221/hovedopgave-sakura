@@ -37,7 +37,6 @@ const { shop } = Astro.props;
 </ul>
 
 
-
 <section class="grid_singleview">
   <div class="img">
   <img class="billede" src={`/produktbilleder/${shop.image}`} alt="" />
@@ -54,8 +53,23 @@ const { shop } = Astro.props;
       <p class="plus">- 1 +</p>
     </div>
     <button>TILFØJ TIL KURV</button>
+    <div class="semere">
+      <hr>
+      <div class="col">
+        <p>Detaljer om varen</p>
+        <p>+</p>
+      </div>
+      <hr>
+          <div class="col">
+        <p>Ofte stillede spørgsmål</p>
+        <p>+</p>
+      </div>
+      <hr>
+    </div>
+    </div>
 
-<div class="semere">
+
+<!-- <div class="semere">
   <hr>
   <div class="col">
     <p>Detaljer om varen</p>
@@ -67,7 +81,7 @@ const { shop } = Astro.props;
     <p>+</p>
   </div>
   <hr>
-</div>
+</div> -->
     
 </section>
 
@@ -77,8 +91,6 @@ const { shop } = Astro.props;
 <Footer />
 
 <style>
-  /* mobile version*/
-
   .semere p{
     font-family: "avenirnext-regular";
     font-size: 15px;
@@ -86,7 +98,8 @@ const { shop } = Astro.props;
 
 .semere {
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
+  margin-left: 2%;
 }
 
 .col {
@@ -100,7 +113,7 @@ const { shop } = Astro.props;
 
 hr {
   margin-inline: 4%;
-}
+} 
 
 
 .plus {
@@ -115,6 +128,7 @@ hr {
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
+    margin-left: 5%;
   }
   .grid_singleview {
     display: grid;
@@ -129,13 +143,21 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 30px;
-    padding: 30px 10px 30px 10px
+    border-radius: 30px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: var(--Primitives-Farver-Brun-01);
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin: 5%;
+    margin-bottom: 12%;
   }
   .billede {
     width: 100%;
     height: auto;
-    border-radius: 30px;
     /* margin-left: 8%; */
+    border-radius: 30px 30px 0px 0px;
   }
 
   .overskrift {
@@ -144,6 +166,7 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
+    margin-left: 2%;
   }
 
   .kategori {
@@ -152,6 +175,7 @@ hr {
     padding-top: 18px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   .pris {
@@ -160,6 +184,7 @@ hr {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   .tekst {
@@ -170,6 +195,7 @@ hr {
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   button {
@@ -188,10 +214,11 @@ hr {
     padding-bottom: 15px;
     border: solid;
     border-color: var(--Semantik-Knap-Red);
+    margin-left: 4%;
   }
 
   button:hover {
-    background-color: var(--Semantik-Baggrund-Beige);
+    background-color: var(--Primitives-Farver-Brun-01);
     color: var(--Semantik-Text-Knaptext-red);
     border-color: var(--Semantik-Knap-Red);
     border: solid;
@@ -202,7 +229,8 @@ ul.breadcrumb {
   padding: 10px 10px;
   list-style: none;
   padding-top: 30px;
-  margin-left: 11%;
+  margin-left: 10.8%;
+  margin-left: 4.8%;
 }
 
 /* Display list items side by side */
@@ -280,8 +308,16 @@ ul.breadcrumb li a:hover {
     .grid_singleview {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 50px 75px 70px 0px;
         margin-left: 7%;
+        border-radius: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: var(--Primitives-Farver-Brun-01);
+        margin-bottom: 60px;
+        margin-top: 30px;
     }
 
     .col {
@@ -296,6 +332,7 @@ ul.breadcrumb li a:hover {
   .semere {
     padding-top: 130px;
     margin-left: 2%;
+    padding-bottom: 30px;
   }
 
   hr {
@@ -316,17 +353,15 @@ ul.breadcrumb li a:hover {
       margin-left: 6%;
     }
     .billede {
-      width: 90%;
-      height: auto;
-      border-radius: 30px;
-      margin-left: 9%;
-      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px 0px 0px 30px;
     }
 
     .overskrift {
       font-family: "didotltstd-roman";
       font-size: 40px;
-      padding-top: 0px;
+      padding-top: 10px;
     }
 
     .kategori {
@@ -367,11 +402,19 @@ ul.breadcrumb li a:hover {
       padding-bottom: 15px;
       margin-left: 5%;
     }
+
+    ul.breadcrumb {
+    padding: 10px 10px;
+    list-style: none;
+    padding-top: 30px;
+    margin-left: 10.8%;
+    }
   }
 
   @media (min-width:1900px){
     .overskrift{
       font-size: 45px;
+      padding-top: 50px;
     }
     .tekst{
       font-size: 20px;
@@ -393,6 +436,11 @@ ul.breadcrumb li a:hover {
     button{
       font-size: 20px;
       width: 220px;
+    }
+
+    ul.breadcrumb{
+      margin-left: 8%;
+      font-size: 20px;
     }
   }
 </style>
