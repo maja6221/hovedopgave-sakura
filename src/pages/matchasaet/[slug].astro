@@ -61,8 +61,13 @@ const { matchasaet } = Astro.props;
   .grid_singleview {
     display: grid;
     grid-template-columns: 1fr;
-    /* top, right, bottom, left */
-    padding: 30px 10px 30px 10px;
+    border-radius: 30px;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: var(--Primitives-Farver-Brun-01);
+    margin: 5%;
+    margin-bottom: 12%;
   }
 
   .plus {
@@ -77,11 +82,12 @@ const { matchasaet } = Astro.props;
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
+    margin-left: 5%;
   }
   .billede {
     width: 100%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 30px 30px 0px 0px;
   }
 
   .overskrift {
@@ -89,6 +95,7 @@ const { matchasaet } = Astro.props;
     font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   .kategori {
@@ -97,6 +104,7 @@ const { matchasaet } = Astro.props;
     padding-top: 18px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   .pris {
@@ -105,6 +113,7 @@ const { matchasaet } = Astro.props;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   .tekst {
@@ -115,6 +124,7 @@ const { matchasaet } = Astro.props;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 2%;
   }
 
   button {
@@ -126,17 +136,12 @@ const { matchasaet } = Astro.props;
     border-radius: 50px;
     color: var(--Semantik-Text-Knaptext-White);
     cursor: pointer;
-    /* padding: 10px; */
     margin-top: 25px;
-    margin-left: 1%;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 5%;
+    margin-left: 4%;
   }
-
-  /* button:hover {
-    background-color: #D3BCB0;
-    color: var();
-  } */
 
   button:hover {
     background-color: var(--Semantik-Baggrund-Beige);
@@ -149,7 +154,6 @@ const { matchasaet } = Astro.props;
   background-color: var(--Semantik-Baggrund-Beige);
     }
 
-  /* tablet version*/
   @media (min-width: 820px) {
     .plus {
       font-family: "avenirnext-regular";
@@ -188,14 +192,18 @@ const { matchasaet } = Astro.props;
   @media (min-width: 1000px) {
     .grid_singleview {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      /* top, rigth, bottom, left */
-      padding: 50px 0px 70px 35px;
-      margin-left: 8%;
-      margin-right: 8%;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 7%;
+        border-radius: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: var(--Primitives-Farver-Brun-01);
+        margin-bottom: 60px;
+        margin-top: 30px;
     }
-
-
     .plus {
       font-family: "avenirnext-regular";
       font-size: 15px;
@@ -206,32 +214,33 @@ const { matchasaet } = Astro.props;
       padding-left: 20px;
       padding-top: 2px;
       padding-bottom: 2px;
-      margin-left: 2%;
+      margin-left: 6%;
+
     }
 
     .billede {
-      width: 90%;
-      height: auto;
-      border-radius: 30px;
-      margin-top: 20px;
-      margin-left: 3%;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px 0px 0px 30px;
     }
 
     .overskrift {
       font-family:  "didotltstd-roman";
       font-size: 40px;
+      margin-left: 4%;
     }
 
     .kategori {
       font-family:  "didotltstd-roman";
       font-size: 25px;
       padding-top: 22px;
-      
+      margin-left: 4%;
     }
     .pris {
       font-family: "didotltstd-roman";
       font-size: 20px;
       padding-top: 18px;
+      margin-left: 4%;
     }
 
     .tekst {
@@ -240,6 +249,7 @@ const { matchasaet } = Astro.props;
       font-size: 15px;
       padding-top: 20px;
       padding-bottom: 24px;
+      margin-left: 4%;
     }
 
     button {
@@ -251,19 +261,16 @@ const { matchasaet } = Astro.props;
       font-size: 15px;
       width: 200px;
       border: none;
-      /* margin-top: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px; */
       margin-top: 30px;
       padding-top: 15px;
       padding-bottom: 15px;
-      margin-left: 1%;
+      margin-left: 5%;
+      margin-bottom: 5%;
     }
   button:hover {
-    background-color: var(--Semantik-Baggrund-Beige);
+    background-color: var(--Primitives-Farver-Brun-01);
     color: var(--Semantik-Text-Knaptext-red);
     border-color: var(--Semantik-Knap-Red);
-    border: solid;
   }
 }
 
