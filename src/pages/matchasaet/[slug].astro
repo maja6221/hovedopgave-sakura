@@ -65,7 +65,7 @@ const { matchasaet } = Astro.props;
     padding: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background-color: var(--Primitives-Farver-Brun-01);
+    background-color: var(--Primitives-Farver-Beige-02);
     margin: 5%;
     margin-bottom: 12%;
   }
@@ -130,7 +130,6 @@ const { matchasaet } = Astro.props;
   button {
     font-size: 15px;
     width: 200px;
-    border: none;
     background-color: var(--Semantik-Knap-Red);
     font-family: "avenirnext-regular";
     border-radius: 50px;
@@ -141,10 +140,12 @@ const { matchasaet } = Astro.props;
     padding-bottom: 15px;
     margin-bottom: 5%;
     margin-left: 4%;
+    border: solid;
+    border-color: var(--Semantik-Knap-Red);
   }
 
   button:hover {
-    background-color: var(--Semantik-Baggrund-Beige);
+    background-color: var(--Primitives-Farver-Beige-02);
     color: var(--Semantik-Text-Knaptext-red);
     border-color: var(--Semantik-Knap-Red);
     border: solid;
@@ -200,7 +201,7 @@ const { matchasaet } = Astro.props;
         padding: 0px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
-        background-color: var(--Primitives-Farver-Brun-01);
+        background-color: var(--Primitives-Farver-Beige-02);
         margin-bottom: 60px;
         margin-top: 30px;
     }
@@ -215,7 +216,6 @@ const { matchasaet } = Astro.props;
       padding-top: 2px;
       padding-bottom: 2px;
       margin-left: 6%;
-
     }
 
     .billede {
@@ -260,15 +260,17 @@ const { matchasaet } = Astro.props;
       cursor: pointer;
       font-size: 15px;
       width: 200px;
-      border: none;
       margin-top: 30px;
       padding-top: 15px;
       padding-bottom: 15px;
       margin-left: 5%;
       margin-bottom: 5%;
+      border-style: solid;
+      border: solid;
+      border-color: var(--Semantik-Knap-Red);
     }
   button:hover {
-    background-color: var(--Primitives-Farver-Brun-01);
+    background-color: var(--Primitives-Farver-Beige-02);
     color: var(--Semantik-Text-Knaptext-red);
     border-color: var(--Semantik-Knap-Red);
   }

@@ -9,6 +9,11 @@ import Matchatevideo from "../components/Matchatevideo.astro";
 
 <Header />
 
+<ul class="breadcrumb">
+  <li><a href="/matcha">Matcha guide</a></li>
+  <li><a href="/teguide">Guide til matcha te</a></li>
+</ul>
+
 <body>
   <h1>Guide til matcha te</h1>
   <Guidete />
@@ -40,6 +45,40 @@ import Matchatevideo from "../components/Matchatevideo.astro";
    } */
 
   /* desktop version */
+
+  ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  padding-top: 30px;
+  margin-left: 5%;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--Primitives-Farver-Hvid-sort-09);
+  text-decoration: none;
+  font-family: "avenirnext-regular";
+  font-size: 15px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--Semantik-Knap-Red);
+  text-decoration: none;
+}
 
   body {
     background-color: var(--Semantik-Baggrund-Beige);
