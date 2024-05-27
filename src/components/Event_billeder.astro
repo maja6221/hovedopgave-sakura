@@ -16,7 +16,8 @@ import "../style/mutual.css";
 <style>
     img {
         border-radius: 30px;
-        /* width: 100%; */
+        width: 100%;
+        height: auto;
     }
 
     .images{
@@ -26,16 +27,19 @@ import "../style/mutual.css";
         justify-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 90%;
+        width: 100%;
+        height: auto;
     }
 
     .div2 {
         display: none;
     }
     
+    /* desktop version */
     @media (min-width: 1000px) {
         img {
         border-radius: 30px;
+        width: 90%;
     }
 
     .images{
@@ -45,11 +49,12 @@ import "../style/mutual.css";
         justify-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
-       
+        width: 100%;
     } 
 
     .div2 {
         display: contents;
+        width: 90%;
     }
     }
 
