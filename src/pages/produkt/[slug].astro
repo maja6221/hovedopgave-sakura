@@ -2,7 +2,7 @@
 //@ts-nocheck
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import "../styles/mutual.css";
+import "../style/mutual.css";
 
 export async function getStaticPaths() {
   const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/shop";
@@ -70,10 +70,6 @@ const { shop } = Astro.props;
     </div>
     
 </section>
-
-
-
-
 <Footer />
 
 <style>
