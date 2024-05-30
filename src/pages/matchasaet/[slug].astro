@@ -2,7 +2,7 @@
 //@ts-nocheck
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import "../style/mutual.css";
+import "../../style/mutual.css";
 
 export async function getStaticPaths() {
   const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/matchasaet";
@@ -96,6 +96,7 @@ const { matchasaet } = Astro.props;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 2%;
+    margin-top: 4%;
   }
 
   .kategori {
@@ -210,6 +211,7 @@ const { matchasaet } = Astro.props;
       font-family:  "didotltstd-roman";
       font-size: 40px;
       margin-left: 4%;
+      margin-top: 4%;
     }
 
     .kategori {
