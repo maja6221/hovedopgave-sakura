@@ -1,8 +1,22 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: var(--Semantik-Baggrund-Beige); */
+} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @font-face {
@@ -36,34 +50,6 @@ h4 {
 h5 {
   font-size: 20px;
 }
-
-/* .p1 {
-  font-size: 15px;
-}
-
-.p2 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.p3 {
-  font-size: 20px;
-}
-
-.p4 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.p5 {
-  font-size: 30px;
-}
-
-.p6 {
-  font-size: 30px;
-  font-weight: bold;
-} */
-
 
 :root {
 
